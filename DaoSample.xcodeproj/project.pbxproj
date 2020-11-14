@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3525382C5D0025EBD4 /* AppDelegate.swift */; };
 		75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3725382C5D0025EBD4 /* SceneDelegate.swift */; };
-		75427B3A25382C5D0025EBD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3925382C5D0025EBD4 /* ViewController.swift */; };
 		75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75427B3B25382C5D0025EBD4 /* Main.storyboard */; };
 		75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75427B3E25382C630025EBD4 /* Assets.xcassets */; };
 		75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75427B4025382C630025EBD4 /* LaunchScreen.storyboard */; };
 		75427B4D25382C640025EBD4 /* DaoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B4C25382C640025EBD4 /* DaoSampleTests.swift */; };
 		75427B5825382C640025EBD4 /* DaoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B5725382C640025EBD4 /* DaoSampleUITests.swift */; };
 		75427B70253833850025EBD4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 75427B6F253833850025EBD4 /* SwiftyJSON */; };
+		75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FC9255FFACA008002DF /* ViewController.swift */; };
+		75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FB6FCA255FFACA008002DF /* ViewController.xib */; };
+		75FB6FD8255FFF56008002DF /* BaseUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FD7255FFF56008002DF /* BaseUI.swift */; };
+		75FB6FDE2560010C008002DF /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FDD2560010C008002DF /* UIView_Extension.swift */; };
+		75FCEA5C25384784007A7D1F /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA5B25384784007A7D1F /* SwifterSwift */; };
+		75FCEA702538533B007A7D1F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA6F2538533B007A7D1F /* Alamofire */; };
+		75FCEA79253856F5007A7D1F /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA78253856F5007A7D1F /* ReactiveCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 		75427B3225382C5D0025EBD4 /* DaoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75427B3525382C5D0025EBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75427B3725382C5D0025EBD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		75427B3925382C5D0025EBD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75427B3C25382C5D0025EBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75427B3E25382C630025EBD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75427B4125382C630025EBD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +55,10 @@
 		75427B5325382C640025EBD4 /* DaoSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaoSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75427B5725382C640025EBD4 /* DaoSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoSampleUITests.swift; sourceTree = "<group>"; };
 		75427B5925382C640025EBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75FB6FC9255FFACA008002DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75FB6FCA255FFACA008002DF /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		75FB6FD7255FFF56008002DF /* BaseUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUI.swift; sourceTree = "<group>"; };
+		75FB6FDD2560010C008002DF /* UIView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FCEA702538533B007A7D1F /* Alamofire in Frameworks */,
+				75FCEA79253856F5007A7D1F /* ReactiveCocoa in Frameworks */,
 				75427B70253833850025EBD4 /* SwiftyJSON in Frameworks */,
+				75FCEA5C25384784007A7D1F /* SwifterSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +113,12 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				75FB6FDC256000CD008002DF /* Extension */,
+				75FB6FD3255FFF20008002DF /* BaseUI */,
 				75427B3525382C5D0025EBD4 /* AppDelegate.swift */,
 				75427B3725382C5D0025EBD4 /* SceneDelegate.swift */,
-				75427B3925382C5D0025EBD4 /* ViewController.swift */,
+				75FB6FC9255FFACA008002DF /* ViewController.swift */,
+				75FB6FCA255FFACA008002DF /* ViewController.xib */,
 				75427B3B25382C5D0025EBD4 /* Main.storyboard */,
 				75427B3E25382C630025EBD4 /* Assets.xcassets */,
 				75427B4025382C630025EBD4 /* LaunchScreen.storyboard */,
@@ -130,6 +145,22 @@
 			path = DaoSampleUITests;
 			sourceTree = "<group>";
 		};
+		75FB6FD3255FFF20008002DF /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				75FB6FD7255FFF56008002DF /* BaseUI.swift */,
+			);
+			path = BaseUI;
+			sourceTree = "<group>";
+		};
+		75FB6FDC256000CD008002DF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				75FB6FDD2560010C008002DF /* UIView_Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +179,9 @@
 			name = DaoSample;
 			packageProductDependencies = (
 				75427B6F253833850025EBD4 /* SwiftyJSON */,
+				75FCEA5B25384784007A7D1F /* SwifterSwift */,
+				75FCEA6F2538533B007A7D1F /* Alamofire */,
+				75FCEA78253856F5007A7D1F /* ReactiveCocoa */,
 			);
 			productName = DaoSample;
 			productReference = 75427B3225382C5D0025EBD4 /* DaoSample.app */;
@@ -222,6 +256,9 @@
 			mainGroup = 75427B2925382C5D0025EBD4;
 			packageReferences = (
 				75427B6E253833850025EBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				75FCEA5A25384784007A7D1F /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				75FCEA6E2538533B007A7D1F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				75FCEA77253856F5007A7D1F /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
 			);
 			productRefGroup = 75427B3325382C5D0025EBD4 /* Products */;
 			projectDirPath = "";
@@ -241,6 +278,7 @@
 			files = (
 				75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */,
 				75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */,
+				75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */,
 				75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75427B3A25382C5D0025EBD4 /* ViewController.swift in Sources */,
+				75FB6FD8255FFF56008002DF /* BaseUI.swift in Sources */,
+				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
 				75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */,
+				75FB6FDE2560010C008002DF /* UIView_Extension.swift in Sources */,
 				75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +647,30 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		75FCEA5A25384784007A7D1F /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		75FCEA6E2538533B007A7D1F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+		75FCEA77253856F5007A7D1F /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -614,6 +678,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 75427B6E253833850025EBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		75FCEA5B25384784007A7D1F /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75FCEA5A25384784007A7D1F /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+		75FCEA6F2538533B007A7D1F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75FCEA6E2538533B007A7D1F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		75FCEA78253856F5007A7D1F /* ReactiveCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75FCEA77253856F5007A7D1F /* XCRemoteSwiftPackageReference "ReactiveCocoa" */;
+			productName = ReactiveCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

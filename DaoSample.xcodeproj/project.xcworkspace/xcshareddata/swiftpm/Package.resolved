@@ -2,6 +2,42 @@
   "object": {
     "pins": [
       {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "becd9a729a37bdbef5bc39dc3c702b99f9e3d046",
+          "version": "5.2.2"
+        }
+      },
+      {
+        "package": "ReactiveCocoa",
+        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveCocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "cca8bdc26d10a889b8bec3cc2167544df730953e",
+          "version": "11.1.0"
+        }
+      },
+      {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift",
+        "state": {
+          "branch": null,
+          "revision": "2260221e19eb024382a1b20cdd2c8adc4f48f8b8",
+          "version": "6.4.0"
+        }
+      },
+      {
+        "package": "SwifterSwift",
+        "repositoryURL": "https://github.com/SwifterSwift/SwifterSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "dc813f3aa92f904a009fe543b99d5649dce7c134",
+          "version": "5.2.0"
+        }
+      },
+      {
         "package": "SwiftyJSON",
         "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
         "state": {
