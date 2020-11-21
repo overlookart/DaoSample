@@ -15,6 +15,7 @@
 		75427B4D25382C640025EBD4 /* DaoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B4C25382C640025EBD4 /* DaoSampleTests.swift */; };
 		75427B5825382C640025EBD4 /* DaoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B5725382C640025EBD4 /* DaoSampleUITests.swift */; };
 		75427B70253833850025EBD4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 75427B6F253833850025EBD4 /* SwiftyJSON */; };
+		75F3AD472568BDCD0000BDBE /* UITextField_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3AD462568BDCD0000BDBE /* UITextField_Extension.swift */; };
 		75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FC9255FFACA008002DF /* ViewController.swift */; };
 		75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FB6FCA255FFACA008002DF /* ViewController.xib */; };
 		75FB6FD8255FFF56008002DF /* BaseUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FD7255FFF56008002DF /* BaseUI.swift */; };
@@ -22,6 +23,7 @@
 		75FB6FE725600996008002DF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FE625600996008002DF /* BaseNavigationController.swift */; };
 		75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FEB256009B3008002DF /* BaseViewController.swift */; };
 		75FB6FF725601953008002DF /* UIApplication_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FF625601953008002DF /* UIApplication_Extension.swift */; };
+		75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FFB25601B32008002DF /* String_Extension.swift */; };
 		75FCEA5C25384784007A7D1F /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA5B25384784007A7D1F /* SwifterSwift */; };
 		75FCEA702538533B007A7D1F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA6F2538533B007A7D1F /* Alamofire */; };
 		75FCEA79253856F5007A7D1F /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA78253856F5007A7D1F /* ReactiveCocoa */; };
@@ -58,6 +60,7 @@
 		75427B5325382C640025EBD4 /* DaoSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaoSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75427B5725382C640025EBD4 /* DaoSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoSampleUITests.swift; sourceTree = "<group>"; };
 		75427B5925382C640025EBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F3AD462568BDCD0000BDBE /* UITextField_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField_Extension.swift; sourceTree = "<group>"; };
 		75FB6FC9255FFACA008002DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75FB6FCA255FFACA008002DF /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		75FB6FD7255FFF56008002DF /* BaseUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUI.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		75FB6FE625600996008002DF /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		75FB6FEB256009B3008002DF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		75FB6FF625601953008002DF /* UIApplication_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication_Extension.swift; sourceTree = "<group>"; };
+		75FB6FFB25601B32008002DF /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,8 @@
 			children = (
 				75FB6FDD2560010C008002DF /* UIView_Extension.swift */,
 				75FB6FF625601953008002DF /* UIApplication_Extension.swift */,
+				75FB6FFB25601B32008002DF /* String_Extension.swift */,
+				75F3AD462568BDCD0000BDBE /* UITextField_Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -317,8 +323,10 @@
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
 				75FB6FE725600996008002DF /* BaseNavigationController.swift in Sources */,
 				75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */,
+				75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */,
 				75FB6FDE2560010C008002DF /* UIView_Extension.swift in Sources */,
 				75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */,
+				75F3AD472568BDCD0000BDBE /* UITextField_Extension.swift in Sources */,
 				75FB6FF725601953008002DF /* UIApplication_Extension.swift in Sources */,
 				75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */,
 			);
