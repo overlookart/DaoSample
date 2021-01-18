@@ -11,21 +11,12 @@
         }
       },
       {
-        "package": "ReactiveCocoa",
-        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveCocoa.git",
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
           "branch": null,
-          "revision": "cca8bdc26d10a889b8bec3cc2167544df730953e",
-          "version": "11.1.0"
-        }
-      },
-      {
-        "package": "ReactiveSwift",
-        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift",
-        "state": {
-          "branch": null,
-          "revision": "2260221e19eb024382a1b20cdd2c8adc4f48f8b8",
-          "version": "6.4.0"
+          "revision": "c8742ed97fc2f0c015a5ea5eddefb064cd7532d2",
+          "version": "6.0.0"
         }
       },
       {

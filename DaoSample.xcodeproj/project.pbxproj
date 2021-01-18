@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A205BC25A70B4A00AF9BFA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28A205BB25A70B4A00AF9BFA /* RxSwift */; };
+		28A205C025A70B4A00AF9BFA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 28A205BF25A70B4A00AF9BFA /* RxRelay */; };
+		28A205C225A70B4A00AF9BFA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 28A205C125A70B4A00AF9BFA /* RxCocoa */; };
+		28A205C425A70B4A00AF9BFA /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 28A205C325A70B4A00AF9BFA /* RxBlocking */; };
+		28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */; };
+		28A205D425A71BE400AF9BFA /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */; };
 		75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3525382C5D0025EBD4 /* AppDelegate.swift */; };
 		75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3725382C5D0025EBD4 /* SceneDelegate.swift */; };
 		75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75427B3B25382C5D0025EBD4 /* Main.storyboard */; };
@@ -28,7 +34,6 @@
 		75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FFB25601B32008002DF /* String_Extension.swift */; };
 		75FCEA5C25384784007A7D1F /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA5B25384784007A7D1F /* SwifterSwift */; };
 		75FCEA702538533B007A7D1F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA6F2538533B007A7D1F /* Alamofire */; };
-		75FCEA79253856F5007A7D1F /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA78253856F5007A7D1F /* ReactiveCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController_Extension.swift; sourceTree = "<group>"; };
+		28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
 		75427B3225382C5D0025EBD4 /* DaoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75427B3525382C5D0025EBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75427B3725382C5D0025EBD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,9 +87,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A205C025A70B4A00AF9BFA /* RxRelay in Frameworks */,
 				75FCEA702538533B007A7D1F /* Alamofire in Frameworks */,
-				75FCEA79253856F5007A7D1F /* ReactiveCocoa in Frameworks */,
+				28A205C225A70B4A00AF9BFA /* RxCocoa in Frameworks */,
 				75427B70253833850025EBD4 /* SwiftyJSON in Frameworks */,
+				28A205C425A70B4A00AF9BFA /* RxBlocking in Frameworks */,
+				28A205BC25A70B4A00AF9BFA /* RxSwift in Frameworks */,
 				75FCEA5C25384784007A7D1F /* SwifterSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +114,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		286795BD257299BD00A419D2 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
 		75427B2925382C5D0025EBD4 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +144,7 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				286795BD257299BD00A419D2 /* Browser */,
 				75FB6FDC256000CD008002DF /* Extension */,
 				75FB6FD3255FFF20008002DF /* BaseUI */,
 				75427B3525382C5D0025EBD4 /* AppDelegate.swift */,
@@ -178,6 +196,8 @@
 				75FB6FFB25601B32008002DF /* String_Extension.swift */,
 				75F3AD462568BDCD0000BDBE /* UITextField_Extension.swift */,
 				75F3AD512569201C0000BDBE /* WKWebView_Extension.swift */,
+				28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */,
+				28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -202,7 +222,10 @@
 				75427B6F253833850025EBD4 /* SwiftyJSON */,
 				75FCEA5B25384784007A7D1F /* SwifterSwift */,
 				75FCEA6F2538533B007A7D1F /* Alamofire */,
-				75FCEA78253856F5007A7D1F /* ReactiveCocoa */,
+				28A205BB25A70B4A00AF9BFA /* RxSwift */,
+				28A205BF25A70B4A00AF9BFA /* RxRelay */,
+				28A205C125A70B4A00AF9BFA /* RxCocoa */,
+				28A205C325A70B4A00AF9BFA /* RxBlocking */,
 			);
 			productName = DaoSample;
 			productReference = 75427B3225382C5D0025EBD4 /* DaoSample.app */;
@@ -279,7 +302,7 @@
 				75427B6E253833850025EBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				75FCEA5A25384784007A7D1F /* XCRemoteSwiftPackageReference "SwifterSwift" */,
 				75FCEA6E2538533B007A7D1F /* XCRemoteSwiftPackageReference "Alamofire" */,
-				75FCEA77253856F5007A7D1F /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
+				28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 75427B3325382C5D0025EBD4 /* Products */;
 			projectDirPath = "";
@@ -327,7 +350,9 @@
 			files = (
 				75FB6FD8255FFF56008002DF /* BaseView.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
+				28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */,
 				75FB6FE725600996008002DF /* BaseNavigationController.swift in Sources */,
+				28A205D425A71BE400AF9BFA /* UIViewController_Extension.swift in Sources */,
 				75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */,
 				75F3AD57256924960000BDBE /* BaseWebView.swift in Sources */,
 				75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */,
@@ -667,6 +692,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		75427B6E253833850025EBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
@@ -691,17 +724,29 @@
 				minimumVersion = 5.2.2;
 			};
 		};
-		75FCEA77253856F5007A7D1F /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		28A205BB25A70B4A00AF9BFA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		28A205BF25A70B4A00AF9BFA /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		28A205C125A70B4A00AF9BFA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		28A205C325A70B4A00AF9BFA /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
 		75427B6F253833850025EBD4 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 75427B6E253833850025EBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
@@ -716,11 +761,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 75FCEA6E2538533B007A7D1F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		75FCEA78253856F5007A7D1F /* ReactiveCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 75FCEA77253856F5007A7D1F /* XCRemoteSwiftPackageReference "ReactiveCocoa" */;
-			productName = ReactiveCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
