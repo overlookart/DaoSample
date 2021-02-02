@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28A205BC25A70B4A00AF9BFA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28A205BB25A70B4A00AF9BFA /* RxSwift */; };
-		28A205C025A70B4A00AF9BFA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 28A205BF25A70B4A00AF9BFA /* RxRelay */; };
-		28A205C225A70B4A00AF9BFA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 28A205C125A70B4A00AF9BFA /* RxCocoa */; };
-		28A205C425A70B4A00AF9BFA /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 28A205C325A70B4A00AF9BFA /* RxBlocking */; };
+		21B5F57E45127B0F20388C43 /* Pods_DaoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60466B6F93785E712A12BBF9 /* Pods_DaoSample.framework */; };
 		28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */; };
 		28A205D425A71BE400AF9BFA /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */; };
 		28B6044125B56DC3009653AF /* WKWebviewConfiguration_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B6044025B56DC3009653AF /* WKWebviewConfiguration_Extension.swift */; };
+		28B6044725B57216009653AF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B6044525B57216009653AF /* TableViewController.swift */; };
+		28B6044825B57216009653AF /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B6044625B57216009653AF /* TableViewController.xib */; };
+		28B8DA5625C8E37E0085A4A4 /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DA5425C8E37E0085A4A4 /* ResultsTableController.swift */; };
+		28B8DA5725C8E37E0085A4A4 /* ResultsTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DA5525C8E37E0085A4A4 /* ResultsTableController.xib */; };
 		75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3525382C5D0025EBD4 /* AppDelegate.swift */; };
 		75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3725382C5D0025EBD4 /* SceneDelegate.swift */; };
 		75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75427B3B25382C5D0025EBD4 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75427B4025382C630025EBD4 /* LaunchScreen.storyboard */; };
 		75427B4D25382C640025EBD4 /* DaoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B4C25382C640025EBD4 /* DaoSampleTests.swift */; };
 		75427B5825382C640025EBD4 /* DaoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B5725382C640025EBD4 /* DaoSampleUITests.swift */; };
-		75427B70253833850025EBD4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 75427B6F253833850025EBD4 /* SwiftyJSON */; };
 		75F3AD472568BDCD0000BDBE /* UITextField_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3AD462568BDCD0000BDBE /* UITextField_Extension.swift */; };
 		75F3AD522569201C0000BDBE /* WKWebView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3AD512569201C0000BDBE /* WKWebView_Extension.swift */; };
 		75F3AD57256924960000BDBE /* BaseWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3AD56256924960000BDBE /* BaseWebView.swift */; };
@@ -33,8 +33,8 @@
 		75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FEB256009B3008002DF /* BaseViewController.swift */; };
 		75FB6FF725601953008002DF /* UIApplication_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FF625601953008002DF /* UIApplication_Extension.swift */; };
 		75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FFB25601B32008002DF /* String_Extension.swift */; };
-		75FCEA5C25384784007A7D1F /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA5B25384784007A7D1F /* SwifterSwift */; };
-		75FCEA702538533B007A7D1F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 75FCEA6F2538533B007A7D1F /* Alamofire */; };
+		9A8145A6D7DEC08A4B638EFF /* Pods_DaoSample_DaoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AC68674D943DF127A7AFCC /* Pods_DaoSample_DaoSampleUITests.framework */; };
+		B942BDAD8A8009AD3AC771E3 /* Pods_DaoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +55,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110BD34618E9A14C49BC850E /* Pods-DaoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.release.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.release.xcconfig"; sourceTree = "<group>"; };
 		28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController_Extension.swift; sourceTree = "<group>"; };
 		28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
 		28B6044025B56DC3009653AF /* WKWebviewConfiguration_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebviewConfiguration_Extension.swift; sourceTree = "<group>"; };
+		28B6044525B57216009653AF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		28B6044625B57216009653AF /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		28B8DA5425C8E37E0085A4A4 /* ResultsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
+		28B8DA5525C8E37E0085A4A4 /* ResultsTableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsTableController.xib; sourceTree = "<group>"; };
+		2CC62AE82F227AE18E48DD15 /* Pods-DaoSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSampleTests/Pods-DaoSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaoSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A269B535EADAE6637379EFF /* Pods-DaoSample-DaoSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		60466B6F93785E712A12BBF9 /* Pods_DaoSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaoSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AC68674D943DF127A7AFCC /* Pods_DaoSample_DaoSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaoSample_DaoSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75427B3225382C5D0025EBD4 /* DaoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75427B3525382C5D0025EBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75427B3725382C5D0025EBD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +92,9 @@
 		75FB6FEB256009B3008002DF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		75FB6FF625601953008002DF /* UIApplication_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication_Extension.swift; sourceTree = "<group>"; };
 		75FB6FFB25601B32008002DF /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		D429A7CBA3CF0115437C5949 /* Pods-DaoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DaoSampleTests/Pods-DaoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0BE6A84349F1F956C39637F /* Pods-DaoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A205C025A70B4A00AF9BFA /* RxRelay in Frameworks */,
-				75FCEA702538533B007A7D1F /* Alamofire in Frameworks */,
-				28A205C225A70B4A00AF9BFA /* RxCocoa in Frameworks */,
-				75427B70253833850025EBD4 /* SwiftyJSON in Frameworks */,
-				28A205C425A70B4A00AF9BFA /* RxBlocking in Frameworks */,
-				28A205BC25A70B4A00AF9BFA /* RxSwift in Frameworks */,
-				75FCEA5C25384784007A7D1F /* SwifterSwift in Frameworks */,
+				21B5F57E45127B0F20388C43 /* Pods_DaoSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B942BDAD8A8009AD3AC771E3 /* Pods_DaoSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,17 +118,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8145A6D7DEC08A4B638EFF /* Pods_DaoSample_DaoSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144BB4F06A8B33B669CBF350 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0BE6A84349F1F956C39637F /* Pods-DaoSample.debug.xcconfig */,
+				110BD34618E9A14C49BC850E /* Pods-DaoSample.release.xcconfig */,
+				E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */,
+				4A269B535EADAE6637379EFF /* Pods-DaoSample-DaoSampleUITests.release.xcconfig */,
+				2CC62AE82F227AE18E48DD15 /* Pods-DaoSampleTests.debug.xcconfig */,
+				D429A7CBA3CF0115437C5949 /* Pods-DaoSampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		286795BD257299BD00A419D2 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Browser;
+			sourceTree = "<group>";
+		};
+		30862C29949D13B789B5EE89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60466B6F93785E712A12BBF9 /* Pods_DaoSample.framework */,
+				65AC68674D943DF127A7AFCC /* Pods_DaoSample_DaoSampleUITests.framework */,
+				405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		75427B2925382C5D0025EBD4 = {
@@ -130,6 +162,8 @@
 				75427B4B25382C640025EBD4 /* DaoSampleTests */,
 				75427B5625382C640025EBD4 /* DaoSampleUITests */,
 				75427B3325382C5D0025EBD4 /* Products */,
+				144BB4F06A8B33B669CBF350 /* Pods */,
+				30862C29949D13B789B5EE89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +191,10 @@
 				75427B3E25382C630025EBD4 /* Assets.xcassets */,
 				75427B4025382C630025EBD4 /* LaunchScreen.storyboard */,
 				75427B4325382C640025EBD4 /* Info.plist */,
+				28B6044525B57216009653AF /* TableViewController.swift */,
+				28B6044625B57216009653AF /* TableViewController.xib */,
+				28B8DA5425C8E37E0085A4A4 /* ResultsTableController.swift */,
+				28B8DA5525C8E37E0085A4A4 /* ResultsTableController.xib */,
 			);
 			path = DaoSample;
 			sourceTree = "<group>";
@@ -212,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75427B5C25382C640025EBD4 /* Build configuration list for PBXNativeTarget "DaoSample" */;
 			buildPhases = (
+				D7739AAE430444E0BDFE7E7B /* [CP] Check Pods Manifest.lock */,
 				75427B2E25382C5D0025EBD4 /* Sources */,
 				75427B2F25382C5D0025EBD4 /* Frameworks */,
 				75427B3025382C5D0025EBD4 /* Resources */,
+				5C09FBCD6956DDDE3DEC68BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,13 +262,6 @@
 			);
 			name = DaoSample;
 			packageProductDependencies = (
-				75427B6F253833850025EBD4 /* SwiftyJSON */,
-				75FCEA5B25384784007A7D1F /* SwifterSwift */,
-				75FCEA6F2538533B007A7D1F /* Alamofire */,
-				28A205BB25A70B4A00AF9BFA /* RxSwift */,
-				28A205BF25A70B4A00AF9BFA /* RxRelay */,
-				28A205C125A70B4A00AF9BFA /* RxCocoa */,
-				28A205C325A70B4A00AF9BFA /* RxBlocking */,
 			);
 			productName = DaoSample;
 			productReference = 75427B3225382C5D0025EBD4 /* DaoSample.app */;
@@ -238,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75427B5F25382C640025EBD4 /* Build configuration list for PBXNativeTarget "DaoSampleTests" */;
 			buildPhases = (
+				D4C7F99616F3A0C714B71B17 /* [CP] Check Pods Manifest.lock */,
 				75427B4425382C640025EBD4 /* Sources */,
 				75427B4525382C640025EBD4 /* Frameworks */,
 				75427B4625382C640025EBD4 /* Resources */,
@@ -256,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75427B6225382C640025EBD4 /* Build configuration list for PBXNativeTarget "DaoSampleUITests" */;
 			buildPhases = (
+				2400D85CA06A261EB8E18651 /* [CP] Check Pods Manifest.lock */,
 				75427B4F25382C640025EBD4 /* Sources */,
 				75427B5025382C640025EBD4 /* Frameworks */,
 				75427B5125382C640025EBD4 /* Resources */,
+				0E471189A05447CC39435536 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,10 +338,6 @@
 			);
 			mainGroup = 75427B2925382C5D0025EBD4;
 			packageReferences = (
-				75427B6E253833850025EBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				75FCEA5A25384784007A7D1F /* XCRemoteSwiftPackageReference "SwifterSwift" */,
-				75FCEA6E2538533B007A7D1F /* XCRemoteSwiftPackageReference "Alamofire" */,
-				28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 75427B3325382C5D0025EBD4 /* Products */;
 			projectDirPath = "";
@@ -326,7 +358,9 @@
 				75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */,
 				75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */,
 				75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */,
+				28B6044825B57216009653AF /* TableViewController.xib in Resources */,
 				75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */,
+				28B8DA5725C8E37E0085A4A4 /* ResultsTableController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +380,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E471189A05447CC39435536 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2400D85CA06A261EB8E18651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaoSample-DaoSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C09FBCD6956DDDE3DEC68BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaoSample/Pods-DaoSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaoSample/Pods-DaoSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaoSample/Pods-DaoSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C7F99616F3A0C714B71B17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaoSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7739AAE430444E0BDFE7E7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaoSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75427B2E25382C5D0025EBD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -362,7 +499,9 @@
 				75F3AD522569201C0000BDBE /* WKWebView_Extension.swift in Sources */,
 				75FB6FDE2560010C008002DF /* UIView_Extension.swift in Sources */,
 				28B6044125B56DC3009653AF /* WKWebviewConfiguration_Extension.swift in Sources */,
+				28B6044725B57216009653AF /* TableViewController.swift in Sources */,
 				75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */,
+				28B8DA5625C8E37E0085A4A4 /* ResultsTableController.swift in Sources */,
 				75F3AD472568BDCD0000BDBE /* UITextField_Extension.swift in Sources */,
 				75FB6FF725601953008002DF /* UIApplication_Extension.swift in Sources */,
 				75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */,
@@ -538,12 +677,13 @@
 		};
 		75427B5D25382C640025EBD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0BE6A84349F1F956C39637F /* Pods-DaoSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DaoSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,12 +697,13 @@
 		};
 		75427B5E25382C640025EBD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 110BD34618E9A14C49BC850E /* Pods-DaoSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DaoSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,6 +717,7 @@
 		};
 		75427B6025382C640025EBD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CC62AE82F227AE18E48DD15 /* Pods-DaoSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -597,6 +739,7 @@
 		};
 		75427B6125382C640025EBD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D429A7CBA3CF0115437C5949 /* Pods-DaoSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -618,6 +761,7 @@
 		};
 		75427B6325382C640025EBD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -637,6 +781,7 @@
 		};
 		75427B6425382C640025EBD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A269B535EADAE6637379EFF /* Pods-DaoSample-DaoSampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -694,79 +839,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		75427B6E253833850025EBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		75FCEA5A25384784007A7D1F /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
-			};
-		};
-		75FCEA6E2538533B007A7D1F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		28A205BB25A70B4A00AF9BFA /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		28A205BF25A70B4A00AF9BFA /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		28A205C125A70B4A00AF9BFA /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		28A205C325A70B4A00AF9BFA /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28A205BA25A70B4A00AF9BFA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		75427B6F253833850025EBD4 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 75427B6E253833850025EBD4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-		75FCEA5B25384784007A7D1F /* SwifterSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 75FCEA5A25384784007A7D1F /* XCRemoteSwiftPackageReference "SwifterSwift" */;
-			productName = SwifterSwift;
-		};
-		75FCEA6F2538533B007A7D1F /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 75FCEA6E2538533B007A7D1F /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 75427B2A25382C5D0025EBD4 /* Project object */;
 }
