@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21B5F57E45127B0F20388C43 /* Pods_DaoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60466B6F93785E712A12BBF9 /* Pods_DaoSample.framework */; };
+		2885E90925CCD41B004DCCC0 /* THeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885E90825CCD41B004DCCC0 /* THeaderView.swift */; };
 		28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */; };
 		28A205D425A71BE400AF9BFA /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */; };
 		28B6044125B56DC3009653AF /* WKWebviewConfiguration_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B6044025B56DC3009653AF /* WKWebviewConfiguration_Extension.swift */; };
@@ -15,6 +16,10 @@
 		28B6044825B57216009653AF /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B6044625B57216009653AF /* TableViewController.xib */; };
 		28B8DA5625C8E37E0085A4A4 /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DA5425C8E37E0085A4A4 /* ResultsTableController.swift */; };
 		28B8DA5725C8E37E0085A4A4 /* ResultsTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DA5525C8E37E0085A4A4 /* ResultsTableController.xib */; };
+		28B8DA5D25C8FC120085A4A4 /* BiologyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DA5B25C8FC120085A4A4 /* BiologyModel.xcdatamodeld */; };
+		28B8DA6325CA34E70085A4A4 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DA6225CA34E70085A4A4 /* CoreData.swift */; };
+		28B8DA6825CA36D90085A4A4 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DA6725CA36D90085A4A4 /* PersistentContainer.swift */; };
+		28B8DA8025CA44180085A4A4 /* CoreStorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DA7F25CA44180085A4A4 /* CoreStorer.swift */; };
 		75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3525382C5D0025EBD4 /* AppDelegate.swift */; };
 		75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75427B3725382C5D0025EBD4 /* SceneDelegate.swift */; };
 		75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75427B3B25382C5D0025EBD4 /* Main.storyboard */; };
@@ -56,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		110BD34618E9A14C49BC850E /* Pods-DaoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.release.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.release.xcconfig"; sourceTree = "<group>"; };
+		2885E90825CCD41B004DCCC0 /* THeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THeaderView.swift; sourceTree = "<group>"; };
 		28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController_Extension.swift; sourceTree = "<group>"; };
 		28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
 		28B6044025B56DC3009653AF /* WKWebviewConfiguration_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebviewConfiguration_Extension.swift; sourceTree = "<group>"; };
@@ -63,6 +69,10 @@
 		28B6044625B57216009653AF /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		28B8DA5425C8E37E0085A4A4 /* ResultsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
 		28B8DA5525C8E37E0085A4A4 /* ResultsTableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsTableController.xib; sourceTree = "<group>"; };
+		28B8DA5C25C8FC120085A4A4 /* BiologyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BiologyModel.xcdatamodel; sourceTree = "<group>"; };
+		28B8DA6225CA34E70085A4A4 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		28B8DA6725CA36D90085A4A4 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		28B8DA7F25CA44180085A4A4 /* CoreStorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreStorer.swift; sourceTree = "<group>"; };
 		2CC62AE82F227AE18E48DD15 /* Pods-DaoSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSampleTests/Pods-DaoSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaoSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A269B535EADAE6637379EFF /* Pods-DaoSample-DaoSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +155,44 @@
 			path = Browser;
 			sourceTree = "<group>";
 		};
+		28B8DA6125CA33420085A4A4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				28B8DA6225CA34E70085A4A4 /* CoreData.swift */,
+				28B8DA5B25C8FC120085A4A4 /* BiologyModel.xcdatamodeld */,
+				28B8DA6725CA36D90085A4A4 /* PersistentContainer.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		28B8DA7E25CA44040085A4A4 /* CoreStore */ = {
+			isa = PBXGroup;
+			children = (
+				28B8DA7F25CA44180085A4A4 /* CoreStorer.swift */,
+			);
+			path = CoreStore;
+			sourceTree = "<group>";
+		};
+		28B8DAFA25CCCB7A0085A4A4 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				28B8DAFB25CCCC480085A4A4 /* View */,
+				28B8DA5425C8E37E0085A4A4 /* ResultsTableController.swift */,
+				28B8DA5525C8E37E0085A4A4 /* ResultsTableController.xib */,
+				28B6044525B57216009653AF /* TableViewController.swift */,
+				28B6044625B57216009653AF /* TableViewController.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		28B8DAFB25CCCC480085A4A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2885E90825CCD41B004DCCC0 /* THeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		30862C29949D13B789B5EE89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +228,9 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				28B8DAFA25CCCB7A0085A4A4 /* TableView */,
+				28B8DA7E25CA44040085A4A4 /* CoreStore */,
+				28B8DA6125CA33420085A4A4 /* CoreData */,
 				286795BD257299BD00A419D2 /* Browser */,
 				75FB6FDC256000CD008002DF /* Extension */,
 				75FB6FD3255FFF20008002DF /* BaseUI */,
@@ -191,10 +242,6 @@
 				75427B3E25382C630025EBD4 /* Assets.xcassets */,
 				75427B4025382C630025EBD4 /* LaunchScreen.storyboard */,
 				75427B4325382C640025EBD4 /* Info.plist */,
-				28B6044525B57216009653AF /* TableViewController.swift */,
-				28B6044625B57216009653AF /* TableViewController.xib */,
-				28B8DA5425C8E37E0085A4A4 /* ResultsTableController.swift */,
-				28B8DA5525C8E37E0085A4A4 /* ResultsTableController.xib */,
 			);
 			path = DaoSample;
 			sourceTree = "<group>";
@@ -496,14 +543,19 @@
 				75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */,
 				75F3AD57256924960000BDBE /* BaseWebView.swift in Sources */,
 				75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */,
+				28B8DA6325CA34E70085A4A4 /* CoreData.swift in Sources */,
 				75F3AD522569201C0000BDBE /* WKWebView_Extension.swift in Sources */,
+				28B8DA8025CA44180085A4A4 /* CoreStorer.swift in Sources */,
 				75FB6FDE2560010C008002DF /* UIView_Extension.swift in Sources */,
 				28B6044125B56DC3009653AF /* WKWebviewConfiguration_Extension.swift in Sources */,
+				28B8DA6825CA36D90085A4A4 /* PersistentContainer.swift in Sources */,
 				28B6044725B57216009653AF /* TableViewController.swift in Sources */,
 				75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */,
+				28B8DA5D25C8FC120085A4A4 /* BiologyModel.xcdatamodeld in Sources */,
 				28B8DA5625C8E37E0085A4A4 /* ResultsTableController.swift in Sources */,
 				75F3AD472568BDCD0000BDBE /* UITextField_Extension.swift in Sources */,
 				75FB6FF725601953008002DF /* UIApplication_Extension.swift in Sources */,
+				2885E90925CCD41B004DCCC0 /* THeaderView.swift in Sources */,
 				75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -839,6 +891,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28B8DA5B25C8FC120085A4A4 /* BiologyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28B8DA5C25C8FC120085A4A4 /* BiologyModel.xcdatamodel */,
+			);
+			currentVersion = 28B8DA5C25C8FC120085A4A4 /* BiologyModel.xcdatamodel */;
+			path = BiologyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 75427B2A25382C5D0025EBD4 /* Project object */;
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BiologyKingdom" representedClassName=".BiologyKingdom" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="BiologyLevel" representedClassName=".BiologyLevel" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="levels" toMany="YES" deletionRule="Nullify" destinationEntity="BiologyKingdom"/>
+    </entity>
+    <elements>
+        <element name="BiologyKingdom" positionX="128.890625" positionY="17.328125" width="128" height="58"/>
+        <element name="BiologyLevel" positionX="-63" positionY="-18" width="125.48046875" height="59"/>
+    </elements>
+</model>
