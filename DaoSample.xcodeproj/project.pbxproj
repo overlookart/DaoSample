@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		21B5F57E45127B0F20388C43 /* Pods_DaoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60466B6F93785E712A12BBF9 /* Pods_DaoSample.framework */; };
 		2885E90925CCD41B004DCCC0 /* THeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885E90825CCD41B004DCCC0 /* THeaderView.swift */; };
+		2885E91F25CE840E004DCCC0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885E91D25CE840E004DCCC0 /* CollectionViewController.swift */; };
+		2885E92025CE840E004DCCC0 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2885E91E25CE840E004DCCC0 /* CollectionViewController.xib */; };
+		2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885E92525CED7FA004DCCC0 /* CollectionViewCell.swift */; };
+		2885E92825CED7FA004DCCC0 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2885E92625CED7FA004DCCC0 /* CollectionViewCell.xib */; };
 		28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */; };
 		28A205D425A71BE400AF9BFA /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */; };
 		28B6044125B56DC3009653AF /* WKWebviewConfiguration_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B6044025B56DC3009653AF /* WKWebviewConfiguration_Extension.swift */; };
@@ -62,6 +66,10 @@
 /* Begin PBXFileReference section */
 		110BD34618E9A14C49BC850E /* Pods-DaoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.release.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.release.xcconfig"; sourceTree = "<group>"; };
 		2885E90825CCD41B004DCCC0 /* THeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THeaderView.swift; sourceTree = "<group>"; };
+		2885E91D25CE840E004DCCC0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2885E91E25CE840E004DCCC0 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		2885E92525CED7FA004DCCC0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2885E92625CED7FA004DCCC0 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController_Extension.swift; sourceTree = "<group>"; };
 		28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
 		28B6044025B56DC3009653AF /* WKWebviewConfiguration_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebviewConfiguration_Extension.swift; sourceTree = "<group>"; };
@@ -155,6 +163,17 @@
 			path = Browser;
 			sourceTree = "<group>";
 		};
+		2885E92425CED7C6004DCCC0 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2885E91D25CE840E004DCCC0 /* CollectionViewController.swift */,
+				2885E91E25CE840E004DCCC0 /* CollectionViewController.xib */,
+				2885E92525CED7FA004DCCC0 /* CollectionViewCell.swift */,
+				2885E92625CED7FA004DCCC0 /* CollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		28B8DA6125CA33420085A4A4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +247,7 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				2885E92425CED7C6004DCCC0 /* CollectionView */,
 				28B8DAFA25CCCB7A0085A4A4 /* TableView */,
 				28B8DA7E25CA44040085A4A4 /* CoreStore */,
 				28B8DA6125CA33420085A4A4 /* CoreData */,
@@ -404,9 +424,11 @@
 			files = (
 				75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */,
 				75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */,
+				2885E92025CE840E004DCCC0 /* CollectionViewController.xib in Resources */,
 				75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */,
 				28B6044825B57216009653AF /* TableViewController.xib in Resources */,
 				75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */,
+				2885E92825CED7FA004DCCC0 /* CollectionViewCell.xib in Resources */,
 				28B8DA5725C8E37E0085A4A4 /* ResultsTableController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,7 +557,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2885E91F25CE840E004DCCC0 /* CollectionViewController.swift in Sources */,
 				75FB6FD8255FFF56008002DF /* BaseView.swift in Sources */,
+				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
 				28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */,
 				75FB6FE725600996008002DF /* BaseNavigationController.swift in Sources */,
@@ -734,6 +758,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3HB8GN749;
 				INFOPLIST_FILE = DaoSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -754,6 +779,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N3HB8GN749;
 				INFOPLIST_FILE = DaoSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

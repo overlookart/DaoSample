@@ -7,8 +7,22 @@
 
 import UIKit
 
+class DSData {
+    var title: String
+    var detail: String
+    var dsid: Int
+    
+    init(title: String, detail: String, dsid: Int) {
+        self.title = title
+        self.detail = detail
+        self.dsid = dsid
+    }
+}
+
 class ViewController: UIViewController {
     @IBOutlet var mainTableView: UITableView!
+    
+    var dataSource: [DSData] = []
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,7 +43,8 @@ class ViewController: UIViewController {
         self.navigationController?.setNavigationBar(PrefersLargeTitlesEnable: true)
         self.setNavigationBarLargeTitleDisplay(Mode: .automatic)
         self.navigationController?.setNavigationBar(BackgroundColor: #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1))
-        
+        self.dataSource.append(DSData(title: "SearchController", detail: "搜索控制器", dsid: 0))
+        self.dataSource.append(DSData(title: "CollectionController", detail: "网格控制器", dsid: 1))
         self.title = "DaoSample iOS 11+"
     }
     /*
@@ -46,17 +61,22 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-        cell.textLabel?.text = "SearchController"
-        cell.detailTextLabel?.text = "搜索控制器"
+        cell.textLabel?.text = dataSource[indexPath.row].title
+        cell.detailTextLabel?.text = dataSource[indexPath.row].detail
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(TableViewController())
+        
+        if dataSource[indexPath.row].dsid == 0 {
+            self.navigationController?.pushViewController(TableViewController())
+        }else{
+            self.navigationController?.pushViewController(CollectionViewController(nibName: "CollectionViewController", bundle: Bundle.main))
+        }
     }
 }
