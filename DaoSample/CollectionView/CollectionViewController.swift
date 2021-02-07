@@ -53,6 +53,33 @@ class CollectionViewController: UICollectionViewController {
     }
 
     // MARK:- UICollectionViewDelegate
+    /// item 将要显示
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
+        
+    }
+
+    
+    /// 长按 展示复制/剪切/选择菜单
+    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    /// 复制/剪切/选择菜单生效
+    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+        return true
+    }
+    ///复制/剪切/选择菜单事件
+    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
+        print("performAction",action.description)
+    }
+    
+}
+
+// MARK:- 高亮与选择状态
+extension CollectionViewController {
     /// item 是否可以高亮显示 (when the touch begins)
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
         return true
@@ -78,7 +105,7 @@ class CollectionViewController: UICollectionViewController {
         return true
     }
     
-    /// item 是否可以被取消选中 (when the touch lifts) 当用户在多选模式下点击已选择的项目时调用 
+    /// item 是否可以被取消选中 (when the touch lifts) 当用户在多选模式下点击已选择的项目时调用
     override func collectionView(_ collectionView: UICollectionView, shouldDeselectItemAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -97,30 +124,23 @@ class CollectionViewController: UICollectionViewController {
             cell.didDeselect()
         }
     }
-    
-    /// item 将要显示
-    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
-        
-    }
+}
 
-    
-    /// 长按 展示复制/剪切/选择菜单
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
+
+// MARK:- 用两个手指的手势选择多个项目
+extension CollectionViewController {
+    /// 是否支持多选手势
+    override func collectionView(_ collectionView: UICollectionView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool {
+        true
     }
-    /// 复制/剪切/选择菜单生效
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return true
+    /// 开始多选手势
+    override func collectionView(_ collectionView: UICollectionView, didBeginMultipleSelectionInteractionAt indexPath: IndexPath) {
+        self.setEditing(true, animated: true)
     }
-    ///复制/剪切/选择菜单事件
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-        print("performAction",action.description)
+    /// 结束多选手势
+    override func collectionViewDidEndMultipleSelectionInteraction(_ collectionView: UICollectionView) {
+        
     }
-    
 }
 
 
