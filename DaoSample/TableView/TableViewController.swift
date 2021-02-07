@@ -142,7 +142,6 @@ extension TableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: UITableViewCell.self, for: indexPath)
-//        cell.contentView.backgroundColor = UIColor.gray
         cell.textLabel?.text = (dataSource[indexPath.section].levels?.allObjects[indexPath.row] as! BiologyKingdom).name
         return cell
     }
@@ -150,11 +149,9 @@ extension TableViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return dataSource[section].name
-//        return "SectionHeaderTitle:\(section)"
     }
 
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-//        return "SectionFooterTitle:\(section)"
         return nil
     }
     
@@ -272,6 +269,20 @@ extension TableViewController {
     }
 }
 
-extension TableViewController: UISearchControllerDelegate {
+// MARK:- 用两个手指的手势选择多个项目
+extension TableViewController {
+    /// 是否支持多选手势
+    override func tableView(_ tableView: UITableView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool {
+        true
+    }
     
+    /// 开始多选手势
+    override func tableView(_ tableView: UITableView, didBeginMultipleSelectionInteractionAt indexPath: IndexPath) {
+        self.setEditing(true, animated: true)
+    }
+    
+    /// 结束多选手势
+    override func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableView) {
+        
+    }
 }
