@@ -43,26 +43,97 @@ class CollectionViewController: UICollectionViewController {
     }
     */
 
-    // MARK:- UICollectionViewDataSource
+    
 
+    
+}
+
+// MARK: - UICollectionViewDataSource
+/**
+ 用于管理数据并为CollectionView提供cell的对象所采用的方法。
+ */
+extension CollectionViewController {
+    
+    /// 数据源中组的数量
+    /// - Parameter collectionView
+    /// - Returns: 组的数量
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-
+    
+    /// 指定部分item的数量
+    /// - Parameters:
+    ///   - collectionView
+    ///   - section: 标识collectionView中的组的索引号。 该索引值从0开始
+    /// - Returns: 部分中的item数
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return 20
     }
-
+    
+    /// 返回指定的cell
+    /// - Parameters:
+    ///   - collectionView
+    ///   - indexPath: item的索引
+    /// - Returns: 已配置的单元格对象 您不得从此方法返回nil
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withClass: CollectionViewCell.self, for: indexPath)
     
         // Configure the cell
         return cell
     }
+    
+    /// 要求您的数据源对象提供附加视图以显示在集合视图中。
+    /// - Parameters:
+    ///   - collectionView
+    ///   - kind: 附加试图的类型
+    ///   - indexPath: 附加试图的索引
+    /// - Returns: 配置的附加视图对象。 您不得从此方法返回nil。
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let reusableview = UICollectionReusableView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        reusableview.backgroundColor = UIColor.random
+        return reusableview
+    }
+    
+    
+    /// item 是否可以移动
+    /// - Parameters:
+    ///   - collectionView
+    ///   - indexPath: item 的索引
+    /// - Returns: 如果允许移动item，则为true；否则，则为false。
+    override func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    /// 移动 item
+    /// - Parameters:
+    ///   - collectionView:
+    ///   - sourceIndexPath: item 的原始索引
+    ///   - destinationIndexPath: item 的新索引
+    override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+        // 更新数据源
+    }
+    
+    /// 要求数据源返回索引项的标题以显示在collectionView中
+    /// - Parameter collectionView
+    /// - Returns: 字符串数组，用于每个索引条目的标题。 例如，您可能返回一个包含字母的字符串数组（[“ A”，“ B”，“ C”，...，“ Z”])
+    override func indexTitles(for collectionView: UICollectionView) -> [String]? {
+        return ["A"]
+    }
+    
+    /// 要求数据源返回与您的一个索引条目相对应的集合视图项的索引路径
+    /// - Parameters:
+    ///   - collectionView
+    ///   - title: 索引项目的标题。 此字符串对应于您在indexTitles（for :)方法中返回的字符串之一。
+    ///   - index: 由indexTitles（for :)方法返回的数组索引，该索引与索引标题相对应。
+    /// - Returns: 用户选择索引时应显示的集合视图项的索引路径
+    override func collectionView(_ collectionView: UICollectionView, indexPathForIndexTitle title: String, at index: Int) -> IndexPath {
+        return IndexPath(item: 0, section: index)
+    }
 }
+
+
 // MARK: - UICollectionViewDelegate
 // MARK:- 高亮与选择状态
 extension CollectionViewController {
