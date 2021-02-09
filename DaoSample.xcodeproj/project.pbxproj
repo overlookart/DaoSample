@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		21B5F57E45127B0F20388C43 /* Pods_DaoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60466B6F93785E712A12BBF9 /* Pods_DaoSample.framework */; };
+		286F569E25D2302D0004A46C /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F569D25D2302D0004A46C /* CollectionViewFlowLayout.swift */; };
+		286F56A625D251BD0004A46C /* SupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F56A425D251BD0004A46C /* SupplementaryView.swift */; };
+		286F56A725D251BD0004A46C /* SupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286F56A525D251BD0004A46C /* SupplementaryView.xib */; };
+		286F56AF25D25C130004A46C /* CollectionView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F56AE25D25C130004A46C /* CollectionView_Extension.swift */; };
 		2885E90925CCD41B004DCCC0 /* THeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885E90825CCD41B004DCCC0 /* THeaderView.swift */; };
 		2885E91F25CE840E004DCCC0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885E91D25CE840E004DCCC0 /* CollectionViewController.swift */; };
 		2885E92025CE840E004DCCC0 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2885E91E25CE840E004DCCC0 /* CollectionViewController.xib */; };
@@ -65,6 +69,10 @@
 
 /* Begin PBXFileReference section */
 		110BD34618E9A14C49BC850E /* Pods-DaoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.release.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.release.xcconfig"; sourceTree = "<group>"; };
+		286F569D25D2302D0004A46C /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		286F56A425D251BD0004A46C /* SupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementaryView.swift; sourceTree = "<group>"; };
+		286F56A525D251BD0004A46C /* SupplementaryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupplementaryView.xib; sourceTree = "<group>"; };
+		286F56AE25D25C130004A46C /* CollectionView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView_Extension.swift; sourceTree = "<group>"; };
 		2885E90825CCD41B004DCCC0 /* THeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THeaderView.swift; sourceTree = "<group>"; };
 		2885E91D25CE840E004DCCC0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		2885E91E25CE840E004DCCC0 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
@@ -163,13 +171,32 @@
 			path = Browser;
 			sourceTree = "<group>";
 		};
+		286F56A225D2515C0004A46C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2885E92525CED7FA004DCCC0 /* CollectionViewCell.swift */,
+				2885E92625CED7FA004DCCC0 /* CollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		286F56A325D251650004A46C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				286F56A425D251BD0004A46C /* SupplementaryView.swift */,
+				286F56A525D251BD0004A46C /* SupplementaryView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2885E92425CED7C6004DCCC0 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				286F56A325D251650004A46C /* View */,
+				286F56A225D2515C0004A46C /* Cell */,
+				28D53BDC25D0FAD70000C9D6 /* Layout */,
 				2885E91D25CE840E004DCCC0 /* CollectionViewController.swift */,
 				2885E91E25CE840E004DCCC0 /* CollectionViewController.xib */,
-				2885E92525CED7FA004DCCC0 /* CollectionViewCell.swift */,
-				2885E92625CED7FA004DCCC0 /* CollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -210,6 +237,14 @@
 				2885E90825CCD41B004DCCC0 /* THeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		28D53BDC25D0FAD70000C9D6 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				286F569D25D2302D0004A46C /* CollectionViewFlowLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		30862C29949D13B789B5EE89 /* Frameworks */ = {
@@ -306,6 +341,7 @@
 				28A205CE25A70FCA00AF9BFA /* UINavigationController_Extension.swift */,
 				28A205D325A71BE400AF9BFA /* UIViewController_Extension.swift */,
 				28B6044025B56DC3009653AF /* WKWebviewConfiguration_Extension.swift */,
+				286F56AE25D25C130004A46C /* CollectionView_Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -427,6 +463,7 @@
 				2885E92025CE840E004DCCC0 /* CollectionViewController.xib in Resources */,
 				75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */,
 				28B6044825B57216009653AF /* TableViewController.xib in Resources */,
+				286F56A725D251BD0004A46C /* SupplementaryView.xib in Resources */,
 				75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */,
 				2885E92825CED7FA004DCCC0 /* CollectionViewCell.xib in Resources */,
 				28B8DA5725C8E37E0085A4A4 /* ResultsTableController.xib in Resources */,
@@ -561,7 +598,9 @@
 				75FB6FD8255FFF56008002DF /* BaseView.swift in Sources */,
 				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
+				286F56AF25D25C130004A46C /* CollectionView_Extension.swift in Sources */,
 				28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */,
+				286F569E25D2302D0004A46C /* CollectionViewFlowLayout.swift in Sources */,
 				75FB6FE725600996008002DF /* BaseNavigationController.swift in Sources */,
 				28A205D425A71BE400AF9BFA /* UIViewController_Extension.swift in Sources */,
 				75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */,
@@ -576,6 +615,7 @@
 				28B6044725B57216009653AF /* TableViewController.swift in Sources */,
 				75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */,
 				28B8DA5D25C8FC120085A4A4 /* BiologyModel.xcdatamodeld in Sources */,
+				286F56A625D251BD0004A46C /* SupplementaryView.swift in Sources */,
 				28B8DA5625C8E37E0085A4A4 /* ResultsTableController.swift in Sources */,
 				75F3AD472568BDCD0000BDBE /* UITextField_Extension.swift in Sources */,
 				75FB6FF725601953008002DF /* UIApplication_Extension.swift in Sources */,

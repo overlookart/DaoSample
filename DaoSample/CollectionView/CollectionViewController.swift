@@ -14,14 +14,13 @@ class CollectionViewController: UICollectionViewController {
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView.register(nibWithCellClass: CollectionViewCell.self)
+        
+        registerCellAndSupplementaryView()
+        
         // 是否可以选中cell
         self.collectionView.allowsSelection = true
         // 是否可以多选cell
         self.collectionView.allowsMultipleSelection = true
-        
         if #available(iOS 14.0, *) {
             // 在编辑模式下是否可以选中cell
             self.collectionView.allowsSelectionDuringEditing = true
@@ -44,7 +43,12 @@ class CollectionViewController: UICollectionViewController {
     */
 
     
-
+    private func registerCellAndSupplementaryView() {
+        // 注册单元格
+        self.collectionView.register(nibWithCellClass: CollectionViewCell.self)
+        // 注册组头/脚试图
+        self.collectionView.register(supplementaryViewOfKind: "supplementary", withClass: SupplementaryView.self)
+    }
     
 }
 
@@ -58,7 +62,7 @@ extension CollectionViewController {
     /// - Parameter collectionView
     /// - Returns: 组的数量
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 2
     }
 
     
@@ -83,16 +87,17 @@ extension CollectionViewController {
         return cell
     }
     
-    /// 要求您的数据源对象提供附加视图以显示在集合视图中。
+    /// 每组头/脚视图。
     /// - Parameters:
     ///   - collectionView
     ///   - kind: 附加试图的类型
     ///   - indexPath: 附加试图的索引
     /// - Returns: 配置的附加视图对象。 您不得从此方法返回nil。
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let reusableview = UICollectionReusableView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        reusableview.backgroundColor = UIColor.random
-        return reusableview
+        let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: "supplementary", withClass: SupplementaryView.self, for: indexPath)
+        supplementaryView.backgroundColor = UIColor.random
+        print(kind)
+        return supplementaryView
     }
     
     
@@ -119,7 +124,7 @@ extension CollectionViewController {
     /// - Parameter collectionView
     /// - Returns: 字符串数组，用于每个索引条目的标题。 例如，您可能返回一个包含字母的字符串数组（[“ A”，“ B”，“ C”，...，“ Z”])
     override func indexTitles(for collectionView: UICollectionView) -> [String]? {
-        return ["A"]
+        return ["A","B"]
     }
     
     /// 要求数据源返回与您的一个索引条目相对应的集合视图项的索引路径
