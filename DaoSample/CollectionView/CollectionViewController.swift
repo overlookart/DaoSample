@@ -90,9 +90,9 @@ extension CollectionViewController {
     /// 每组头/脚视图。
     /// - Parameters:
     ///   - collectionView
-    ///   - kind: 附加试图的类型
-    ///   - indexPath: 附加试图的索引
-    /// - Returns: 配置的附加视图对象。 您不得从此方法返回nil。
+    ///   - kind: 头/脚试图的类型
+    ///   - indexPath: 头/脚试图的索引
+    /// - Returns: 配置的头/脚视图对象。 您不得从此方法返回nil。
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: "supplementary", withClass: SupplementaryView.self, for: indexPath)
         supplementaryView.backgroundColor = UIColor.random
@@ -211,12 +211,12 @@ extension CollectionViewController {
         
     }
     
-    /// 附加试图将要显示
+    /// 头/脚试图将要显示
     /// - Parameters:
-    ///   - collectionView: 添加补充视图的集合视图对象。
+    ///   - collectionView: 头/脚视图的集合视图对象。
     ///   - view: 正在添加的视图
-    ///   - elementKind: 附加视图的类型。 该字符串由呈现视图的布局定义。
-    ///   - indexPath: 附加视图数据项的索引路径。
+    ///   - elementKind: 头/脚视图的类型。 该字符串由呈现视图的布局定义。
+    ///   - indexPath: 头/脚视图数据项的索引路径。
     override func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
         
     }
@@ -230,12 +230,12 @@ extension CollectionViewController {
         
     }
     
-    /// 附加试图已经移除
+    /// 头/脚试图已经移除
     /// - Parameters:
     ///   - collectionView: 移除附加试图的collectionView
     ///   - view: 被移除的试图
-    ///   - elementKind: 附加试图的类型
-    ///   - indexPath: 附加视图数据项的索引路径。
+    ///   - elementKind: 头/脚试图的类型
+    ///   - indexPath: 头/脚视图数据项的索引路径。
     override func collectionView(_ collectionView: UICollectionView, didEndDisplayingSupplementaryView view: UICollectionReusableView, forElementOfKind elementKind: String, at indexPath: IndexPath) {
         
     }
