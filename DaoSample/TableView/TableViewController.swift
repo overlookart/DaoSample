@@ -37,9 +37,11 @@ class TableViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = self.editButtonItem
 
         self.navigationItem.rightBarButtonItems?.append(UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAction)))
-        
+        searchController.searchBar.prompt = "abc"
         self.navigationItem.searchController = self.searchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
+        
+        
         if let resultsController = self.searchController.searchResultsController as? ResultsTableController {
             self.searchController.delegate = resultsController
             self.searchController.searchResultsUpdater = resultsController
@@ -49,7 +51,7 @@ class TableViewController: UITableViewController {
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
 
 //        self.navigationController?.navigationBar.barStyle = .black
-        self.title = "TableView"
+//        self.title = "TableView"
         //http://abp.alookbrowser.com/alook/zh.zip
         
 //        self.setNavigationBarLargeTitleDisplay(Mode: .never)

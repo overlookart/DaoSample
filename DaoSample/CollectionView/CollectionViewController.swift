@@ -286,7 +286,19 @@ extension CollectionViewController {
     ///   - point: 交互在集合视图的坐标空间中的位置
     /// - Returns: 描述要显示的菜单的上下文菜单配置对象 返回nil阻止交互开始。 返回空的配置对象将导致交互开始，然后以取消效果结束
     override func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
-        return nil
+        let action1 = UIAction(title: "Action1", image: nil, identifier: .none, discoverabilityTitle: nil, attributes: .destructive, state: .mixed) { (action) in
+            
+        }
+        let action2 = UIAction(title: "Action2", image: nil, identifier: .none, discoverabilityTitle: nil, attributes: .destructive, state: .on) { (action) in
+            
+        }
+        let contextMenu = UIContextMenuConfiguration(identifier: nil) { () -> UIViewController? in
+            return TableViewController()
+        } actionProvider: { (elements) -> UIMenu? in
+            return UIMenu(title: "ac", image: nil, identifier: .about, options: .destructive, children: [action1,action2])
+        }
+
+        return contextMenu
     }
     
     
@@ -297,6 +309,9 @@ extension CollectionViewController {
     /// - Returns: 一个定向的预览对象，描述了解雇预览 交互使呈现的菜单动画化为预览。 使用此方法来自定义解雇动画
     
     override func collectionView(_ collectionView: UICollectionView, previewForDismissingContextMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 500))
+        view.backgroundColor = UIColor.random
+        
         return nil
     }
     
@@ -306,6 +321,9 @@ extension CollectionViewController {
     ///   - configuration: 菜单的配置突出显示
     /// - Returns: 一个定向的预览对象，用于描述突出显示预览
     override func collectionView(_ collectionView: UICollectionView, previewForHighlightingContextMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 500))
+        view.backgroundColor = UIColor.random
+//        UITargetedPreview(view: view)
         return nil
     }
     
