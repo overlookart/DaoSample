@@ -89,7 +89,7 @@ class TableViewController: UITableViewController {
     
     @objc func addAction() {
         self.tableView.setEditing(false, animated: true)
-        let alert = UIAlertController(title: "添加一种生物等级", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "添加一种生物泛型", message: nil, preferredStyle: .alert)
         alert.addAction(title: "确定", style: .default, isEnabled: true) { (action) in
             if let tf = alert.textFields, tf.count > 0 ,let ff = tf.first, let text = ff.text {
                 self.addBiologyLevel(levelName: text)
@@ -112,6 +112,10 @@ extension TableViewController {
     /// 添加生物等级
     /// - Parameter levelName: 等级名称
     private func addBiologyLevel(levelName: String) {
+        if levelName.isEmpty {
+            //提示信息
+            return;
+        }
         let bl = CoreData.share.insertObject(entityName: "BiologyLevel") as! BiologyLevel
         bl.name = levelName
         CoreData.share.save()
