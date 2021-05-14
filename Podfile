@@ -14,7 +14,8 @@ target 'DaoSample' do
   pod 'SwifterSwift'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'CoreStore', '~> 7.2'
-  pod 'SnapKit', '~> 5.0.0'  
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Eureka'
 target 'DaoSampleTests' do
     inherit! :search_paths
     # Pods for testing
