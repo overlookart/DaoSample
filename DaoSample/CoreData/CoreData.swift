@@ -37,15 +37,6 @@ class CoreData {
     }()
     
     
-    /// 查询 core data 数据
-    /// - Parameter entityName: 查询参数
-    /// - Returns: 查询结果
-    private func fetchObjects(objectType: NSManagedObject.Type) -> [Any]? {
-        let entityName = "\(objectType)"
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
-        let result = try? self.persistentContainer.viewContext.fetch(fetchRequest)
-        return result
-    }
     
     /// 插入一条数据
     /// - Parameter objectType: 数据类
@@ -56,7 +47,21 @@ class CoreData {
         return entity
     }
     
+    /// 查询 core data 数据
+    /// - Parameter entityName: 查询参数
+    /// - Returns: 查询结果
+    private func fetchObjects(objectType: NSManagedObject.Type) -> [Any]? {
+        let entityName = "\(objectType)"
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        let result = try? self.persistentContainer.viewContext.fetch(fetchRequest)
+        return result
+    }
     
+    /// 删除 core data 数据
+    /// - Parameter object: 数据库存在的数据
+    func deleteObject(object: NSManagedObject) {
+        self.persistentContainer.viewContext.delete(object)
+    }
     
     func addBiology(name: String) -> BiologyKingdom {
 //        let b = NSEntityDescription.insertNewObject(forEntityName: "BiologyLevel", into: self.persistentContainer.viewContext) as! BiologyLevel
