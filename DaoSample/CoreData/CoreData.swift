@@ -32,6 +32,9 @@ class CoreData {
     }()
     
     
+    /// 查询 core data 数据
+    /// - Parameter entityName: 查询参数
+    /// - Returns: 查询结果
     func find(entityName: String) -> [BiologyLevel]? {
         let fetchRequest = NSFetchRequest<BiologyLevel>(entityName: entityName)
         let results = try? CoreData.share.persistentContainer.viewContext.fetch(fetchRequest)

@@ -13,7 +13,7 @@ target 'DaoSample' do
   pod 'RxCocoa', '6.0.0'
   pod 'SwifterSwift'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'CoreStore', '~> 7.2'
+  pod 'CoreStore', '~> 8.0'
   pod 'SnapKit', '~> 5.0.0'
   pod 'Eureka'
   pod 'Fuzi'
