@@ -6,13 +6,14 @@
 //
 
 import UIKit
-
+import PanModal
 class PanModalController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "PanModal"
         // Do any additional setup after loading the view.
+        
     }
 
 
@@ -26,4 +27,18 @@ class PanModalController: BaseViewController {
     }
     */
 
+}
+
+extension PanModalController: PanModalPresentable{
+    var panScrollable: UIScrollView? {
+        return nil
+    }
+    
+    var shortFormHeight: PanModalHeight {
+        return .contentHeight(300)
+    }
+    
+    var longFormHeight: PanModalHeight {
+        return .maxHeightWithTopInset(40)
+    }
 }

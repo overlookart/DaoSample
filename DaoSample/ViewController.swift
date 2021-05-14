@@ -79,7 +79,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }else if dataSource[indexPath.row].dsid == 1{
             self.navigationController?.pushViewController(CollectionViewController(nibName: "CollectionViewController", bundle: Bundle.main))
         }else if dataSource[indexPath.row].dsid == 2 {
-            self.navigationController?.pushViewController(PanModalController())
+            presentPanModal(PanModalController())
         }
     }
 }
