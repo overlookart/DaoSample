@@ -16,6 +16,12 @@ target 'DaoSample' do
   pod 'CoreStore', '~> 7.2'
   pod 'SnapKit', '~> 5.0.0'
   pod 'Eureka'
+  pod 'Fuzi'
+  pod 'lottie-ios'
+  pod 'PanModal'
+  pod 'XCGLogger', '~> 7.0.1'
+  pod 'ZIPFoundation', '~> 0.9'
+  pod 'KeychainAccess'
 target 'DaoSampleTests' do
     inherit! :search_paths
     # Pods for testing
