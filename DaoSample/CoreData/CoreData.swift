@@ -40,11 +40,11 @@ class CoreData {
     /// 查询 core data 数据
     /// - Parameter entityName: 查询参数
     /// - Returns: 查询结果
-    func find(entityName: String) -> [BiologyLevel]? {
-        let fetchRequest = NSFetchRequest<BiologyLevel>(entityName: entityName)
-        let results = try? CoreData.share.persistentContainer.viewContext.fetch(fetchRequest)
-        
-        return results
+    private func fetchObjects(objectType: NSManagedObject.Type) -> [Any]? {
+        let entityName = "\(objectType)"
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        let result = try? self.persistentContainer.viewContext.fetch(fetchRequest)
+        return result
     }
     
     /// 插入一条数据
@@ -83,5 +83,19 @@ extension CoreData {
         biologyLevel.name = name
         self.save()
         return biologyLevel
+    }
+    
+    /// 查询所有的生物等级
+    /// - Returns: 查询结果
+    func findBiologyLevels() -> [BiologyLevel] {
+        if let results = self.fetchObjects(objectType: BiologyLevel.self) {
+            let bls = results.map { object -> BiologyLevel in
+                let bl = object as! BiologyLevel
+                return bl
+            }
+            return bls
+        }else{
+            return []
+        }
     }
 }
