@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         self.navigationController?.setNavigationBar(BackgroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         self.dataSource.append(DSData(title: "SearchController", detail: "搜索控制器", dsid: 0))
         self.dataSource.append(DSData(title: "CollectionController", detail: "网格控制器", dsid: 1))
+        self.dataSource.append(DSData(title: "PanModalSample", detail: "PanModal库", dsid: 2))
         self.title = "DaoSample iOS 11+"
     }
     /*
@@ -75,8 +76,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if dataSource[indexPath.row].dsid == 0 {
             self.navigationController?.pushViewController(TableViewController())
-        }else{
+        }else if dataSource[indexPath.row].dsid == 1{
             self.navigationController?.pushViewController(CollectionViewController(nibName: "CollectionViewController", bundle: Bundle.main))
+        }else if dataSource[indexPath.row].dsid == 2 {
+            self.navigationController?.pushViewController(PanModalController())
         }
     }
 }

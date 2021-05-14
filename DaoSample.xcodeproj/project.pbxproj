@@ -50,6 +50,8 @@
 		9A8145A6D7DEC08A4B638EFF /* Pods_DaoSample_DaoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AC68674D943DF127A7AFCC /* Pods_DaoSample_DaoSampleUITests.framework */; };
 		B942BDAD8A8009AD3AC771E3 /* Pods_DaoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */; };
 		E9C97242264E0E4600E0373A /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C97241264E0E4600E0373A /* BaseTableView.swift */; };
+		E9C9724C264E208300E0373A /* PanModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9724A264E208300E0373A /* PanModalController.swift */; };
+		E9C9724D264E208300E0373A /* PanModalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9724B264E208300E0373A /* PanModalController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		D429A7CBA3CF0115437C5949 /* Pods-DaoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DaoSampleTests/Pods-DaoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C97241264E0E4600E0373A /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		E9C9724A264E208300E0373A /* PanModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanModalController.swift; sourceTree = "<group>"; };
+		E9C9724B264E208300E0373A /* PanModalController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PanModalController.xib; sourceTree = "<group>"; };
 		F0BE6A84349F1F956C39637F /* Pods-DaoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -287,6 +291,7 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				E9C97249264E204100E0373A /* PanModalSample */,
 				2885E92425CED7C6004DCCC0 /* CollectionView */,
 				28B8DAFA25CCCB7A0085A4A4 /* TableView */,
 				28B8DA7E25CA44040085A4A4 /* CoreStore */,
@@ -350,6 +355,15 @@
 				286F56AE25D25C130004A46C /* CollectionView_Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E9C97249264E204100E0373A /* PanModalSample */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9724A264E208300E0373A /* PanModalController.swift */,
+				E9C9724B264E208300E0373A /* PanModalController.xib */,
+			);
+			path = PanModalSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */,
+				E9C9724D264E208300E0373A /* PanModalController.xib in Resources */,
 				75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */,
 				2885E92025CE840E004DCCC0 /* CollectionViewController.xib in Resources */,
 				75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */,
@@ -612,6 +627,7 @@
 				286FF9E725F50ED800AC482A /* LayoutAttributes.swift in Sources */,
 				75427B3625382C5D0025EBD4 /* AppDelegate.swift in Sources */,
 				286FF9E225EC772800AC482A /* CollectionViewLayout.swift in Sources */,
+				E9C9724C264E208300E0373A /* PanModalController.swift in Sources */,
 				75F3AD57256924960000BDBE /* BaseWebView.swift in Sources */,
 				75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */,
 				28B8DA6325CA34E70085A4A4 /* CoreData.swift in Sources */,
