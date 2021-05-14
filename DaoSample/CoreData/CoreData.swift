@@ -7,6 +7,11 @@
 
 import Foundation
 import CoreData
+/// 操作协议
+protocol Operate {
+    
+}
+
 class CoreData {
     private static let instance = CoreData()
     class var share: CoreData {
@@ -42,17 +47,16 @@ class CoreData {
         return results
     }
     
-    func add(entityName: String) {
-        let entity = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.persistentContainer.viewContext)
-        let b = entity as! BiologyLevel
-        b.name = "test"
-        print(b)
-    }
-    
-    func insertObject(entityName: String) -> NSManagedObject {
+    /// 插入一条数据
+    /// - Parameter objectType: 数据类
+    /// - Returns: 数据库的数据模型
+    private func insertObject(objectType: NSManagedObject.Type) -> NSManagedObject  {
+        let entityName = "\(objectType)"
         let entity = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.persistentContainer.viewContext)
         return entity
     }
+    
+    
     
     func addBiology(name: String) -> BiologyKingdom {
 //        let b = NSEntityDescription.insertNewObject(forEntityName: "BiologyLevel", into: self.persistentContainer.viewContext) as! BiologyLevel
@@ -66,5 +70,18 @@ class CoreData {
     
     func save() {
         self.persistentContainer.saveContext()
+    }
+}
+
+extension CoreData {
+    
+    /// 添加一种生物等级
+    /// - Parameter name: 名称
+    /// - Returns: 数据模型
+    func addBiologyLevel(name: String) -> BiologyLevel {
+        let biologyLevel = self.insertObject(objectType: BiologyLevel.self) as! BiologyLevel
+        biologyLevel.name = name
+        self.save()
+        return biologyLevel
     }
 }

@@ -20,8 +20,6 @@ protocol NibLoadable {
 extension NibLoadable where Self: UIView {
     static func loadFromNib(_ nibName : String? = nil) -> Self {
         print(nibName ?? "\(self)")
-        
-
         #if canImport(SwifterSwift)
         return Self.loadFromNib(named: nibName ?? "\(self)", bundle: Bundle.main) as! Self
         #else

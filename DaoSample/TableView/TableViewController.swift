@@ -116,9 +116,7 @@ extension TableViewController {
             //提示信息
             return;
         }
-        let bl = CoreData.share.insertObject(entityName: "BiologyLevel") as! BiologyLevel
-        bl.name = levelName
-        CoreData.share.save()
+        let bl = CoreData.share.addBiologyLevel(name: levelName);
         self.dataSource.append(bl)
         self.tableView.insertSections(IndexSet(integer: self.dataSource.count-1), with: .left)
     }
