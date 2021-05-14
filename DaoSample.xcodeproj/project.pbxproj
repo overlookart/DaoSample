@@ -49,6 +49,7 @@
 		75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FFB25601B32008002DF /* String_Extension.swift */; };
 		9A8145A6D7DEC08A4B638EFF /* Pods_DaoSample_DaoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AC68674D943DF127A7AFCC /* Pods_DaoSample_DaoSampleUITests.framework */; };
 		B942BDAD8A8009AD3AC771E3 /* Pods_DaoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */; };
+		E9C97242264E0E4600E0373A /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C97241264E0E4600E0373A /* BaseTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		75FB6FFB25601B32008002DF /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 		D429A7CBA3CF0115437C5949 /* Pods-DaoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DaoSampleTests/Pods-DaoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9C97241264E0E4600E0373A /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		F0BE6A84349F1F956C39637F /* Pods-DaoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -329,6 +331,7 @@
 				75FB6FE625600996008002DF /* BaseNavigationController.swift */,
 				75FB6FEB256009B3008002DF /* BaseViewController.swift */,
 				75F3AD56256924960000BDBE /* BaseWebView.swift */,
+				E9C97241264E0E4600E0373A /* BaseTableView.swift */,
 			);
 			path = BaseUI;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				75FB6FD8255FFF56008002DF /* BaseView.swift in Sources */,
 				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
+				E9C97242264E0E4600E0373A /* BaseTableView.swift in Sources */,
 				286F56AF25D25C130004A46C /* CollectionView_Extension.swift in Sources */,
 				28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */,
 				286F569E25D2302D0004A46C /* CollectionViewFlowLayout.swift in Sources */,

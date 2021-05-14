@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 //        self.setNavigationBarPrefersLargeTitles(Enable: true)
         self.navigationController?.setNavigationBar(PrefersLargeTitlesEnable: true)
         self.setNavigationBarLargeTitleDisplay(Mode: .automatic)
-        self.navigationController?.setNavigationBar(BackgroundColor: #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1))
+        self.navigationController?.setNavigationBar(BackgroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         self.dataSource.append(DSData(title: "SearchController", detail: "搜索控制器", dsid: 0))
         self.dataSource.append(DSData(title: "CollectionController", detail: "网格控制器", dsid: 1))
         self.title = "DaoSample iOS 11+"

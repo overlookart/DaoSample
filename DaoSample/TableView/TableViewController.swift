@@ -39,7 +39,7 @@ class TableViewController: UITableViewController {
         self.navigationItem.rightBarButtonItems?.append(UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAction)))
         searchController.searchBar.prompt = "abc"
         self.navigationItem.searchController = self.searchController
-        self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.hidesSearchBarWhenScrolling = true
         
         
         if let resultsController = self.searchController.searchResultsController as? ResultsTableController {
@@ -48,8 +48,7 @@ class TableViewController: UITableViewController {
         }
         
         
-        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-
+        self.navigationController?.setNavigationBar(TintColor: #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1))
 //        self.navigationController?.navigationBar.barStyle = .black
 //        self.title = "TableView"
         //http://abp.alookbrowser.com/alook/zh.zip
@@ -69,6 +68,10 @@ class TableViewController: UITableViewController {
         self.tableView.allowsMultipleSelection = true
         //在编辑模式下是否可同时选择多行
         self.tableView.allowsMultipleSelectionDuringEditing = true
+        //设置cell的分割线
+        self.tableView.separatorStyle = .singleLine
+        self.tableView.separatorColor = UIColor.random
+        self.tableView.separatorEffect = UIVisualEffect()
         
         requestData()
     }
