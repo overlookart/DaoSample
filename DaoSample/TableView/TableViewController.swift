@@ -77,14 +77,12 @@ class TableViewController: UITableViewController {
     }
     
     func requestData() {
-        if let r = CoreData.share.find(entityName: "BiologyLevel") {
-            for b in r {
-                print(b.name)
-                print(b.levels)
-            }
-            self.dataSource = r
+         let r = CoreData.share.findBiologyLevels()
+         for b in r {
+            print(b.name)
+            print(b.levels)
         }
-        
+        self.dataSource = r
     }
     
     @objc func addAction() {
@@ -116,9 +114,7 @@ extension TableViewController {
             //提示信息
             return;
         }
-        let bl = CoreData.share.insertObject(entityName: "BiologyLevel") as! BiologyLevel
-        bl.name = levelName
-        CoreData.share.save()
+        let bl = CoreData.share.addBiologyLevel(name: levelName);
         self.dataSource.append(bl)
         self.tableView.insertSections(IndexSet(integer: self.dataSource.count-1), with: .left)
     }

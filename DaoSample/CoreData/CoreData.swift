@@ -7,6 +7,11 @@
 
 import Foundation
 import CoreData
+/// 操作协议
+protocol Operate {
+    
+}
+
 class CoreData {
     private static let instance = CoreData()
     class var share: CoreData {
@@ -32,26 +37,30 @@ class CoreData {
     }()
     
     
+    
+    /// 插入一条数据
+    /// - Parameter objectType: 数据类
+    /// - Returns: 数据库的数据模型
+    private func insertObject(objectType: NSManagedObject.Type) -> NSManagedObject  {
+        let entityName = "\(objectType)"
+        let entity = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.persistentContainer.viewContext)
+        return entity
+    }
+    
     /// 查询 core data 数据
     /// - Parameter entityName: 查询参数
     /// - Returns: 查询结果
-    func find(entityName: String) -> [BiologyLevel]? {
-        let fetchRequest = NSFetchRequest<BiologyLevel>(entityName: entityName)
-        let results = try? CoreData.share.persistentContainer.viewContext.fetch(fetchRequest)
-        
-        return results
+    private func fetchObjects(objectType: NSManagedObject.Type) -> [Any]? {
+        let entityName = "\(objectType)"
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        let result = try? self.persistentContainer.viewContext.fetch(fetchRequest)
+        return result
     }
     
-    func add(entityName: String) {
-        let entity = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.persistentContainer.viewContext)
-        let b = entity as! BiologyLevel
-        b.name = "test"
-        print(b)
-    }
-    
-    func insertObject(entityName: String) -> NSManagedObject {
-        let entity = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.persistentContainer.viewContext)
-        return entity
+    /// 删除 core data 数据
+    /// - Parameter object: 数据库存在的数据
+    func deleteObject(object: NSManagedObject) {
+        self.persistentContainer.viewContext.delete(object)
     }
     
     func addBiology(name: String) -> BiologyKingdom {
@@ -66,5 +75,32 @@ class CoreData {
     
     func save() {
         self.persistentContainer.saveContext()
+    }
+}
+
+extension CoreData {
+    
+    /// 添加一种生物等级
+    /// - Parameter name: 名称
+    /// - Returns: 数据模型
+    func addBiologyLevel(name: String) -> BiologyLevel {
+        let biologyLevel = self.insertObject(objectType: BiologyLevel.self) as! BiologyLevel
+        biologyLevel.name = name
+        self.save()
+        return biologyLevel
+    }
+    
+    /// 查询所有的生物等级
+    /// - Returns: 查询结果
+    func findBiologyLevels() -> [BiologyLevel] {
+        if let results = self.fetchObjects(objectType: BiologyLevel.self) {
+            let bls = results.map { object -> BiologyLevel in
+                let bl = object as! BiologyLevel
+                return bl
+            }
+            return bls
+        }else{
+            return []
+        }
     }
 }
