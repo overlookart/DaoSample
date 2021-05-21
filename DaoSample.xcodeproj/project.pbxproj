@@ -49,6 +49,10 @@
 		75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FFB25601B32008002DF /* String_Extension.swift */; };
 		9A8145A6D7DEC08A4B638EFF /* Pods_DaoSample_DaoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AC68674D943DF127A7AFCC /* Pods_DaoSample_DaoSampleUITests.framework */; };
 		B942BDAD8A8009AD3AC771E3 /* Pods_DaoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */; };
+		E95A98E3265749C100E37691 /* TiltedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E2265749C100E37691 /* TiltedLayout.swift */; };
+		E95A98E52657514500E37691 /* CusLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E42657514500E37691 /* CusLayoutAttributes.swift */; };
+		E95A98E726575DD900E37691 /* LayoutTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E626575DD900E37691 /* LayoutTransform.swift */; };
+		E95A98E926575FCA00E37691 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E826575FCA00E37691 /* CustomCollectionView.swift */; };
 		E9C97242264E0E4600E0373A /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C97241264E0E4600E0373A /* BaseTableView.swift */; };
 		E9C9724C264E208300E0373A /* PanModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9724A264E208300E0373A /* PanModalController.swift */; };
 		E9C9724D264E208300E0373A /* PanModalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9724B264E208300E0373A /* PanModalController.xib */; };
@@ -127,6 +131,10 @@
 		75FB6FFB25601B32008002DF /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 		D429A7CBA3CF0115437C5949 /* Pods-DaoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DaoSampleTests/Pods-DaoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E95A98E2265749C100E37691 /* TiltedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltedLayout.swift; sourceTree = "<group>"; };
+		E95A98E42657514500E37691 /* CusLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusLayoutAttributes.swift; sourceTree = "<group>"; };
+		E95A98E626575DD900E37691 /* LayoutTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTransform.swift; sourceTree = "<group>"; };
+		E95A98E826575FCA00E37691 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		E9C97241264E0E4600E0373A /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		E9C9724A264E208300E0373A /* PanModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanModalController.swift; sourceTree = "<group>"; };
 		E9C9724B264E208300E0373A /* PanModalController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PanModalController.xib; sourceTree = "<group>"; };
@@ -256,6 +264,10 @@
 				286F569D25D2302D0004A46C /* CollectionViewFlowLayout.swift */,
 				286FF9E125EC772800AC482A /* CollectionViewLayout.swift */,
 				286FF9E625F50ED800AC482A /* LayoutAttributes.swift */,
+				E95A98E2265749C100E37691 /* TiltedLayout.swift */,
+				E95A98E42657514500E37691 /* CusLayoutAttributes.swift */,
+				E95A98E626575DD900E37691 /* LayoutTransform.swift */,
+				E95A98E826575FCA00E37691 /* CustomCollectionView.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -645,6 +657,7 @@
 				E9C9724C264E208300E0373A /* PanModalController.swift in Sources */,
 				75F3AD57256924960000BDBE /* BaseWebView.swift in Sources */,
 				75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */,
+				E95A98E3265749C100E37691 /* TiltedLayout.swift in Sources */,
 				28B8DA6325CA34E70085A4A4 /* CoreData.swift in Sources */,
 				75F3AD522569201C0000BDBE /* WKWebView_Extension.swift in Sources */,
 				28B8DA8025CA44180085A4A4 /* CoreStorer.swift in Sources */,
@@ -653,11 +666,14 @@
 				28B8DA6825CA36D90085A4A4 /* PersistentContainer.swift in Sources */,
 				28B6044725B57216009653AF /* TableViewController.swift in Sources */,
 				75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */,
+				E95A98E726575DD900E37691 /* LayoutTransform.swift in Sources */,
 				28B8DA5D25C8FC120085A4A4 /* BiologyModel.xcdatamodeld in Sources */,
+				E95A98E926575FCA00E37691 /* CustomCollectionView.swift in Sources */,
 				286F56A625D251BD0004A46C /* SupplementaryView.swift in Sources */,
 				E9C9725426534D5B00E0373A /* XCGLoggerController.swift in Sources */,
 				28B8DA5625C8E37E0085A4A4 /* ResultsTableController.swift in Sources */,
 				75F3AD472568BDCD0000BDBE /* UITextField_Extension.swift in Sources */,
+				E95A98E52657514500E37691 /* CusLayoutAttributes.swift in Sources */,
 				75FB6FF725601953008002DF /* UIApplication_Extension.swift in Sources */,
 				2885E90925CCD41B004DCCC0 /* THeaderView.swift in Sources */,
 				75427B3825382C5D0025EBD4 /* SceneDelegate.swift in Sources */,
