@@ -32,6 +32,19 @@ class CustomCollectionView: UICollectionView {
         }
     }
     
+    var itemSize: CGSize = automaticSize {
+        didSet{
+            
+        }
+    }
+    
+    var interitemSpacing: CGFloat = 0 {
+        didSet {
+            
+        }
+    }
+    
+    
     var scrollDirection: CustomCollectionView.ScrollDirection = .horizontal {
         didSet{
 //            
@@ -81,5 +94,5 @@ extension CustomCollectionView {
     
     public static let automaticDistance: UInt = 0
     
-    public static let sutomaticSize: CGSize = .zero
+    public static let automaticSize: CGSize = .zero
 }
