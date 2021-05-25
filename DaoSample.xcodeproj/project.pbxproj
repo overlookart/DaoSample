@@ -49,6 +49,8 @@
 		75FB6FFC25601B32008002DF /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6FFB25601B32008002DF /* String_Extension.swift */; };
 		9A8145A6D7DEC08A4B638EFF /* Pods_DaoSample_DaoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AC68674D943DF127A7AFCC /* Pods_DaoSample_DaoSampleUITests.framework */; };
 		B942BDAD8A8009AD3AC771E3 /* Pods_DaoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */; };
+		E905D161265CE4BA00D3E98D /* CusCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D160265CE4BA00D3E98D /* CusCollectionLayout.swift */; };
+		E905D163265CE9A200D3E98D /* TestCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D162265CE9A200D3E98D /* TestCollectionViewLayout.swift */; };
 		E95A98E3265749C100E37691 /* TiltedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E2265749C100E37691 /* TiltedLayout.swift */; };
 		E95A98E52657514500E37691 /* CusLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E42657514500E37691 /* CusLayoutAttributes.swift */; };
 		E95A98E726575DD900E37691 /* LayoutTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E626575DD900E37691 /* LayoutTransform.swift */; };
@@ -130,6 +132,8 @@
 		75FB6FF625601953008002DF /* UIApplication_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication_Extension.swift; sourceTree = "<group>"; };
 		75FB6FFB25601B32008002DF /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 		D429A7CBA3CF0115437C5949 /* Pods-DaoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DaoSampleTests/Pods-DaoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		E905D160265CE4BA00D3E98D /* CusCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusCollectionLayout.swift; sourceTree = "<group>"; };
+		E905D162265CE9A200D3E98D /* TestCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewLayout.swift; sourceTree = "<group>"; };
 		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E95A98E2265749C100E37691 /* TiltedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltedLayout.swift; sourceTree = "<group>"; };
 		E95A98E42657514500E37691 /* CusLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusLayoutAttributes.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 				E95A98E42657514500E37691 /* CusLayoutAttributes.swift */,
 				E95A98E626575DD900E37691 /* LayoutTransform.swift */,
 				E95A98E826575FCA00E37691 /* CustomCollectionView.swift */,
+				E905D160265CE4BA00D3E98D /* CusCollectionLayout.swift */,
+				E905D162265CE9A200D3E98D /* TestCollectionViewLayout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -661,9 +667,11 @@
 				28B8DA6325CA34E70085A4A4 /* CoreData.swift in Sources */,
 				75F3AD522569201C0000BDBE /* WKWebView_Extension.swift in Sources */,
 				28B8DA8025CA44180085A4A4 /* CoreStorer.swift in Sources */,
+				E905D161265CE4BA00D3E98D /* CusCollectionLayout.swift in Sources */,
 				75FB6FDE2560010C008002DF /* UIView_Extension.swift in Sources */,
 				28B6044125B56DC3009653AF /* WKWebviewConfiguration_Extension.swift in Sources */,
 				28B8DA6825CA36D90085A4A4 /* PersistentContainer.swift in Sources */,
+				E905D163265CE9A200D3E98D /* TestCollectionViewLayout.swift in Sources */,
 				28B6044725B57216009653AF /* TableViewController.swift in Sources */,
 				75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */,
 				E95A98E726575DD900E37691 /* LayoutTransform.swift in Sources */,

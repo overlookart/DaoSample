@@ -62,7 +62,7 @@ extension CollectionViewController {
     /// - Parameter collectionView
     /// - Returns: 组的数量
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 1
     }
 
     
@@ -124,7 +124,7 @@ extension CollectionViewController {
     /// - Parameter collectionView
     /// - Returns: 字符串数组，用于每个索引条目的标题。 例如，您可能返回一个包含字母的字符串数组（[“ A”，“ B”，“ C”，...，“ Z”])
     override func indexTitles(for collectionView: UICollectionView) -> [String]? {
-        return ["A","B"]
+        return ["A"]
     }
     
     /// 要求数据源返回与您的一个索引条目相对应的集合视图项的索引路径
