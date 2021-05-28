@@ -51,6 +51,8 @@
 		B942BDAD8A8009AD3AC771E3 /* Pods_DaoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405F9D4755E7E3ADE5677BC1 /* Pods_DaoSampleTests.framework */; };
 		E905D161265CE4BA00D3E98D /* CusCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D160265CE4BA00D3E98D /* CusCollectionLayout.swift */; };
 		E905D163265CE9A200D3E98D /* TestCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D162265CE9A200D3E98D /* TestCollectionViewLayout.swift */; };
+		E905D167265F308600D3E98D /* TransformSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D165265F308600D3E98D /* TransformSampleController.swift */; };
+		E905D168265F308600D3E98D /* TransformSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E905D166265F308600D3E98D /* TransformSampleController.xib */; };
 		E95A98E3265749C100E37691 /* TiltedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E2265749C100E37691 /* TiltedLayout.swift */; };
 		E95A98E52657514500E37691 /* CusLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E42657514500E37691 /* CusLayoutAttributes.swift */; };
 		E95A98E726575DD900E37691 /* LayoutTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E626575DD900E37691 /* LayoutTransform.swift */; };
@@ -134,6 +136,8 @@
 		D429A7CBA3CF0115437C5949 /* Pods-DaoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DaoSampleTests/Pods-DaoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		E905D160265CE4BA00D3E98D /* CusCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusCollectionLayout.swift; sourceTree = "<group>"; };
 		E905D162265CE9A200D3E98D /* TestCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewLayout.swift; sourceTree = "<group>"; };
+		E905D165265F308600D3E98D /* TransformSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformSampleController.swift; sourceTree = "<group>"; };
+		E905D166265F308600D3E98D /* TransformSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformSampleController.xib; sourceTree = "<group>"; };
 		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E95A98E2265749C100E37691 /* TiltedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltedLayout.swift; sourceTree = "<group>"; };
 		E95A98E42657514500E37691 /* CusLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusLayoutAttributes.swift; sourceTree = "<group>"; };
@@ -313,6 +317,7 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				E905D164265F2F9700D3E98D /* TransformSample */,
 				E9C9725126534D2800E0373A /* XCGLoggerSample */,
 				E9C97249264E204100E0373A /* PanModalSample */,
 				2885E92425CED7C6004DCCC0 /* CollectionView */,
@@ -378,6 +383,15 @@
 				286F56AE25D25C130004A46C /* CollectionView_Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E905D164265F2F9700D3E98D /* TransformSample */ = {
+			isa = PBXGroup;
+			children = (
+				E905D165265F308600D3E98D /* TransformSampleController.swift */,
+				E905D166265F308600D3E98D /* TransformSampleController.xib */,
+			);
+			path = TransformSample;
 			sourceTree = "<group>";
 		};
 		E9C97249264E204100E0373A /* PanModalSample */ = {
@@ -513,6 +527,7 @@
 				75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */,
 				E9C9724D264E208300E0373A /* PanModalController.xib in Resources */,
 				75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */,
+				E905D168265F308600D3E98D /* TransformSampleController.xib in Resources */,
 				2885E92025CE840E004DCCC0 /* CollectionViewController.xib in Resources */,
 				75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */,
 				28B6044825B57216009653AF /* TableViewController.xib in Resources */,
@@ -649,6 +664,7 @@
 			files = (
 				2885E91F25CE840E004DCCC0 /* CollectionViewController.swift in Sources */,
 				75FB6FD8255FFF56008002DF /* BaseView.swift in Sources */,
+				E905D167265F308600D3E98D /* TransformSampleController.swift in Sources */,
 				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
 				E9C97242264E0E4600E0373A /* BaseTableView.swift in Sources */,

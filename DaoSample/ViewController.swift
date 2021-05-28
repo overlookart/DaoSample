@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         self.dataSource.append(DSData(title: "CollectionController", detail: "网格控制器", dsid: 1))
         self.dataSource.append(DSData(title: "PanModalSample", detail: "PanModal库", dsid: 2))
         self.dataSource.append(DSData(title: "XCGLoggerSample", detail: "XCGLogger库", dsid: 3))
+        self.dataSource.append(DSData(title: "TransformSample", detail: "Transform", dsid: 4))
         self.title = "DaoSample iOS 11+"
     }
     /*
@@ -83,6 +84,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             presentPanModal(PanModalController())
         }else if dataSource[indexPath.row].dsid == 3 {
             self.navigationController?.pushViewController(XCGLoggerController())
+        }else if dataSource[indexPath.row].dsid == 4 {
+            self.navigationController?.pushViewController(TransformSampleController())
         }
     }
 }
