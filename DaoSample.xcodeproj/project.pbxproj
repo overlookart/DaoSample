@@ -53,6 +53,8 @@
 		E905D163265CE9A200D3E98D /* TestCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D162265CE9A200D3E98D /* TestCollectionViewLayout.swift */; };
 		E905D167265F308600D3E98D /* TransformSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D165265F308600D3E98D /* TransformSampleController.swift */; };
 		E905D168265F308600D3E98D /* TransformSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E905D166265F308600D3E98D /* TransformSampleController.xib */; };
+		E905D16B26609CCB00D3E98D /* Transform3DController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D16926609CCB00D3E98D /* Transform3DController.swift */; };
+		E905D16C26609CCB00D3E98D /* Transform3DController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E905D16A26609CCB00D3E98D /* Transform3DController.xib */; };
 		E95A98E3265749C100E37691 /* TiltedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E2265749C100E37691 /* TiltedLayout.swift */; };
 		E95A98E52657514500E37691 /* CusLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E42657514500E37691 /* CusLayoutAttributes.swift */; };
 		E95A98E726575DD900E37691 /* LayoutTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E626575DD900E37691 /* LayoutTransform.swift */; };
@@ -138,6 +140,8 @@
 		E905D162265CE9A200D3E98D /* TestCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewLayout.swift; sourceTree = "<group>"; };
 		E905D165265F308600D3E98D /* TransformSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformSampleController.swift; sourceTree = "<group>"; };
 		E905D166265F308600D3E98D /* TransformSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformSampleController.xib; sourceTree = "<group>"; };
+		E905D16926609CCB00D3E98D /* Transform3DController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform3DController.swift; sourceTree = "<group>"; };
+		E905D16A26609CCB00D3E98D /* Transform3DController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Transform3DController.xib; sourceTree = "<group>"; };
 		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E95A98E2265749C100E37691 /* TiltedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltedLayout.swift; sourceTree = "<group>"; };
 		E95A98E42657514500E37691 /* CusLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusLayoutAttributes.swift; sourceTree = "<group>"; };
@@ -390,6 +394,8 @@
 			children = (
 				E905D165265F308600D3E98D /* TransformSampleController.swift */,
 				E905D166265F308600D3E98D /* TransformSampleController.xib */,
+				E905D16926609CCB00D3E98D /* Transform3DController.swift */,
+				E905D16A26609CCB00D3E98D /* Transform3DController.xib */,
 			);
 			path = TransformSample;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */,
+				E905D16C26609CCB00D3E98D /* Transform3DController.xib in Resources */,
 				E9C9724D264E208300E0373A /* PanModalController.xib in Resources */,
 				75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */,
 				E905D168265F308600D3E98D /* TransformSampleController.xib in Resources */,
@@ -683,6 +690,7 @@
 				28B8DA6325CA34E70085A4A4 /* CoreData.swift in Sources */,
 				75F3AD522569201C0000BDBE /* WKWebView_Extension.swift in Sources */,
 				28B8DA8025CA44180085A4A4 /* CoreStorer.swift in Sources */,
+				E905D16B26609CCB00D3E98D /* Transform3DController.swift in Sources */,
 				E905D161265CE4BA00D3E98D /* CusCollectionLayout.swift in Sources */,
 				75FB6FDE2560010C008002DF /* UIView_Extension.swift in Sources */,
 				28B6044125B56DC3009653AF /* WKWebviewConfiguration_Extension.swift in Sources */,
