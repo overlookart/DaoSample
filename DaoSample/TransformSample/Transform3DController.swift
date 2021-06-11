@@ -8,13 +8,23 @@
 import UIKit
 
 class Transform3DController: BaseViewController {
-
+    private var currentBtnTag = 0
+    @IBOutlet weak var currentBtnTagLab: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func transformBtnAction(_ sender: Any) {
+        if let btn = sender as? UIButton {
+            self.currentBtnTag = btn.tag
+            self.currentBtnTagLab.text = "\(self.currentBtnTag)"
+        }
+    }
+    
+    private func updateTransformBtnState(){
+        
+    }
 
     /*
     // MARK: - Navigation
