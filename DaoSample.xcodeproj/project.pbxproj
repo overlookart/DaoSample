@@ -64,6 +64,8 @@
 		E9C9724D264E208300E0373A /* PanModalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9724B264E208300E0373A /* PanModalController.xib */; };
 		E9C9725426534D5B00E0373A /* XCGLoggerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9725226534D5B00E0373A /* XCGLoggerController.swift */; };
 		E9C9725526534D5B00E0373A /* XCGLoggerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9725326534D5B00E0373A /* XCGLoggerController.xib */; };
+		E9CC074B26C645EA00FB9CCC /* DeviceKitSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC074926C645EA00FB9CCC /* DeviceKitSampleController.swift */; };
+		E9CC074C26C645EA00FB9CCC /* DeviceKitSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CC074A26C645EA00FB9CCC /* DeviceKitSampleController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +154,8 @@
 		E9C9724B264E208300E0373A /* PanModalController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PanModalController.xib; sourceTree = "<group>"; };
 		E9C9725226534D5B00E0373A /* XCGLoggerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGLoggerController.swift; sourceTree = "<group>"; };
 		E9C9725326534D5B00E0373A /* XCGLoggerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XCGLoggerController.xib; sourceTree = "<group>"; };
+		E9CC074926C645EA00FB9CCC /* DeviceKitSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceKitSampleController.swift; sourceTree = "<group>"; };
+		E9CC074A26C645EA00FB9CCC /* DeviceKitSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceKitSampleController.xib; sourceTree = "<group>"; };
 		F0BE6A84349F1F956C39637F /* Pods-DaoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,6 +325,7 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				E9CC074826C645C200FB9CCC /* DeviceKitSample */,
 				E905D164265F2F9700D3E98D /* TransformSample */,
 				E9C9725126534D2800E0373A /* XCGLoggerSample */,
 				E9C97249264E204100E0373A /* PanModalSample */,
@@ -416,6 +421,15 @@
 				E9C9725326534D5B00E0373A /* XCGLoggerController.xib */,
 			);
 			path = XCGLoggerSample;
+			sourceTree = "<group>";
+		};
+		E9CC074826C645C200FB9CCC /* DeviceKitSample */ = {
+			isa = PBXGroup;
+			children = (
+				E9CC074926C645EA00FB9CCC /* DeviceKitSampleController.swift */,
+				E9CC074A26C645EA00FB9CCC /* DeviceKitSampleController.xib */,
+			);
+			path = DeviceKitSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,6 +552,7 @@
 				2885E92025CE840E004DCCC0 /* CollectionViewController.xib in Resources */,
 				75FB6FCC255FFACA008002DF /* ViewController.xib in Resources */,
 				28B6044825B57216009653AF /* TableViewController.xib in Resources */,
+				E9CC074C26C645EA00FB9CCC /* DeviceKitSampleController.xib in Resources */,
 				75427B3D25382C5D0025EBD4 /* Main.storyboard in Resources */,
 				2885E92825CED7FA004DCCC0 /* CollectionViewCell.xib in Resources */,
 				E9C9725526534D5B00E0373A /* XCGLoggerController.xib in Resources */,
@@ -675,6 +690,7 @@
 				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
 				E9C97242264E0E4600E0373A /* BaseTableView.swift in Sources */,
+				E9CC074B26C645EA00FB9CCC /* DeviceKitSampleController.swift in Sources */,
 				286F56AF25D25C130004A46C /* CollectionView_Extension.swift in Sources */,
 				28A205CF25A70FCA00AF9BFA /* UINavigationController_Extension.swift in Sources */,
 				286F569E25D2302D0004A46C /* CollectionViewFlowLayout.swift in Sources */,

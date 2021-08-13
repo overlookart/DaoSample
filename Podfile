@@ -22,6 +22,8 @@ target 'DaoSample' do
   pod 'XCGLogger', '~> 7.0.1'
   pod 'ZIPFoundation', '~> 0.9'
   pod 'KeychainAccess'
+  # UIDevice 工具库
+  pod 'DeviceKit', '~> 4.0'
 target 'DaoSampleTests' do
     inherit! :search_paths
     # Pods for testing
