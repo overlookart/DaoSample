@@ -24,6 +24,8 @@ target 'DaoSample' do
   pod 'KeychainAccess'
   # UIDevice 工具库
   pod 'DeviceKit', '~> 4.0'
+  # 预加载骨架动画
+  pod 'SkeletonView'
 target 'DaoSampleTests' do
     inherit! :search_paths
     # Pods for testing
