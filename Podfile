@@ -30,6 +30,10 @@ target 'DaoSample' do
   pod 'SCLAlertView'
   # popover
   pod "Popover"
+  # 文件管理框架
+  pod 'FileKit', '5.2.0'
+  # 异步规范
+  pod "PromiseKit", "~> 6.8"
 target 'DaoSampleTests' do
     inherit! :search_paths
     # Pods for testing
