@@ -26,6 +26,10 @@ target 'DaoSample' do
   pod 'DeviceKit', '~> 4.0'
   # 预加载骨架动画
   pod 'SkeletonView'
+  # 弹框
+  pod 'SCLAlertView'
+  # popover
+  pod "Popover"
 target 'DaoSampleTests' do
     inherit! :search_paths
     # Pods for testing
