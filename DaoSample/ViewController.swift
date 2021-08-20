@@ -48,7 +48,8 @@ class ViewController: UIViewController {
         self.dataSource.append(DSData(title: "PanModalSample", detail: "PanModal库", dsid: 2))
         self.dataSource.append(DSData(title: "XCGLoggerSample", detail: "XCGLogger库", dsid: 3))
         self.dataSource.append(DSData(title: "TransformSample", detail: "Transform", dsid: 4))
-        self.dataSource.append(DSData(title: "DeviceKitSample", detail: "Device", dsid: 5))
+        self.dataSource.append(DSData(title: "DeviceKitSample", detail: "DeviceKit", dsid: 5))
+        self.dataSource.append(DSData(title: "PromiseKitSample", detail: "PromiseKit", dsid: 6))
         self.title = "DaoSample iOS 11+"
     }
     /*
@@ -89,6 +90,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(TransformSampleController())
         }else if dataSource[indexPath.row].dsid == 5 {
             self.navigationController?.pushViewController(DeviceKitSampleController())
+        }else if dataSource[indexPath.row].dsid == 6 {
+            self.navigationController?.pushViewController(PromiseKitSampleController())
         }
     }
 }
