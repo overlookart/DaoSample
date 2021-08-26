@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import XCGLogger
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,7 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         
-        
+        let log = XCGLogger.default
+        log.setup(level: .debug, showLogIdentifier: true, showFunctionName: true, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, showDate: true, writeToFile: nil, fileLevel: nil)
+        log.debug("app 启动 ！！")
         _ = CoreData.share.persistentContainer
         return true
     }
