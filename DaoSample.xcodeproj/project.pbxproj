@@ -57,6 +57,8 @@
 		E905D16C26609CCB00D3E98D /* Transform3DController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E905D16A26609CCB00D3E98D /* Transform3DController.xib */; };
 		E955AAE526CF9785005FE4EF /* PromiseKitSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955AAE326CF9785005FE4EF /* PromiseKitSampleController.swift */; };
 		E955AAE626CF9785005FE4EF /* PromiseKitSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E955AAE426CF9785005FE4EF /* PromiseKitSampleController.xib */; };
+		E955AAEA26D734E0005FE4EF /* NVActivityIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955AAE826D734E0005FE4EF /* NVActivityIndicatorController.swift */; };
+		E955AAEB26D734E0005FE4EF /* NVActivityIndicatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E955AAE926D734E0005FE4EF /* NVActivityIndicatorController.xib */; };
 		E95A98E3265749C100E37691 /* TiltedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E2265749C100E37691 /* TiltedLayout.swift */; };
 		E95A98E52657514500E37691 /* CusLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E42657514500E37691 /* CusLayoutAttributes.swift */; };
 		E95A98E726575DD900E37691 /* LayoutTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E626575DD900E37691 /* LayoutTransform.swift */; };
@@ -149,6 +151,8 @@
 		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E955AAE326CF9785005FE4EF /* PromiseKitSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitSampleController.swift; sourceTree = "<group>"; };
 		E955AAE426CF9785005FE4EF /* PromiseKitSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromiseKitSampleController.xib; sourceTree = "<group>"; };
+		E955AAE826D734E0005FE4EF /* NVActivityIndicatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorController.swift; sourceTree = "<group>"; };
+		E955AAE926D734E0005FE4EF /* NVActivityIndicatorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NVActivityIndicatorController.xib; sourceTree = "<group>"; };
 		E95A98E2265749C100E37691 /* TiltedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltedLayout.swift; sourceTree = "<group>"; };
 		E95A98E42657514500E37691 /* CusLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusLayoutAttributes.swift; sourceTree = "<group>"; };
 		E95A98E626575DD900E37691 /* LayoutTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTransform.swift; sourceTree = "<group>"; };
@@ -329,6 +333,7 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				E955AAE726D734C8005FE4EF /* NVActivityIndicator */,
 				E955AAE226CF9759005FE4EF /* PromiseKitSample */,
 				E9CC074826C645C200FB9CCC /* DeviceKitSample */,
 				E905D164265F2F9700D3E98D /* TransformSample */,
@@ -417,6 +422,15 @@
 				E955AAE426CF9785005FE4EF /* PromiseKitSampleController.xib */,
 			);
 			path = PromiseKitSample;
+			sourceTree = "<group>";
+		};
+		E955AAE726D734C8005FE4EF /* NVActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				E955AAE826D734E0005FE4EF /* NVActivityIndicatorController.swift */,
+				E955AAE926D734E0005FE4EF /* NVActivityIndicatorController.xib */,
+			);
+			path = NVActivityIndicator;
 			sourceTree = "<group>";
 		};
 		E9C97249264E204100E0373A /* PanModalSample */ = {
@@ -561,6 +575,7 @@
 				75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */,
 				E905D16C26609CCB00D3E98D /* Transform3DController.xib in Resources */,
 				E955AAE626CF9785005FE4EF /* PromiseKitSampleController.xib in Resources */,
+				E955AAEB26D734E0005FE4EF /* NVActivityIndicatorController.xib in Resources */,
 				E9C9724D264E208300E0373A /* PanModalController.xib in Resources */,
 				75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */,
 				E905D168265F308600D3E98D /* TransformSampleController.xib in Resources */,
@@ -727,6 +742,7 @@
 				75FB6FDE2560010C008002DF /* UIView_Extension.swift in Sources */,
 				28B6044125B56DC3009653AF /* WKWebviewConfiguration_Extension.swift in Sources */,
 				28B8DA6825CA36D90085A4A4 /* PersistentContainer.swift in Sources */,
+				E955AAEA26D734E0005FE4EF /* NVActivityIndicatorController.swift in Sources */,
 				E905D163265CE9A200D3E98D /* TestCollectionViewLayout.swift in Sources */,
 				28B6044725B57216009653AF /* TableViewController.swift in Sources */,
 				75FB6FEC256009B3008002DF /* BaseViewController.swift in Sources */,

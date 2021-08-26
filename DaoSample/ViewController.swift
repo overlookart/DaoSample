@@ -50,6 +50,7 @@ class ViewController: UIViewController {
         self.dataSource.append(DSData(title: "TransformSample", detail: "Transform", dsid: 4))
         self.dataSource.append(DSData(title: "DeviceKitSample", detail: "DeviceKit", dsid: 5))
         self.dataSource.append(DSData(title: "PromiseKitSample", detail: "PromiseKit", dsid: 6))
+        self.dataSource.append(DSData(title: "NVActivityIndicator", detail: "NVActivityIndicator", dsid: 7))
         self.title = "DaoSample iOS 11+"
     }
     /*
@@ -92,6 +93,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(DeviceKitSampleController())
         }else if dataSource[indexPath.row].dsid == 6 {
             self.navigationController?.pushViewController(PromiseKitSampleController())
+        }else if dataSource[indexPath.row].dsid == 7 {
+            self.navigationController?.pushViewController(NVActivityIndicatorController())
         }
     }
 }
