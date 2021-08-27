@@ -9,6 +9,7 @@ import UIKit
 import NVActivityIndicatorView
 class NVActivityIndicatorController: UIViewController {
 
+    @IBOutlet weak var mainCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let indicator = NVActivityIndicatorView(frame: CGRect(x: 100, y: 200, width: 50, height: 50), type: .ballGridPulse, color: UIColor.random, padding: 0);
@@ -28,4 +29,8 @@ class NVActivityIndicatorController: UIViewController {
     }
     */
 
+}
+
+extension NVActivityIndicatorController : UICollectionViewDelegateFlowLayout{
+    
 }

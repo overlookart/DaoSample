@@ -59,6 +59,8 @@
 		E955AAE626CF9785005FE4EF /* PromiseKitSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E955AAE426CF9785005FE4EF /* PromiseKitSampleController.xib */; };
 		E955AAEA26D734E0005FE4EF /* NVActivityIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955AAE826D734E0005FE4EF /* NVActivityIndicatorController.swift */; };
 		E955AAEB26D734E0005FE4EF /* NVActivityIndicatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E955AAE926D734E0005FE4EF /* NVActivityIndicatorController.xib */; };
+		E955AAEE26D87833005FE4EF /* VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955AAED26D87833005FE4EF /* VM.swift */; };
+		E955AAF026D8784E005FE4EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955AAEF26D8784E005FE4EF /* Model.swift */; };
 		E95A98E3265749C100E37691 /* TiltedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E2265749C100E37691 /* TiltedLayout.swift */; };
 		E95A98E52657514500E37691 /* CusLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E42657514500E37691 /* CusLayoutAttributes.swift */; };
 		E95A98E726575DD900E37691 /* LayoutTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A98E626575DD900E37691 /* LayoutTransform.swift */; };
@@ -153,6 +155,8 @@
 		E955AAE426CF9785005FE4EF /* PromiseKitSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromiseKitSampleController.xib; sourceTree = "<group>"; };
 		E955AAE826D734E0005FE4EF /* NVActivityIndicatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorController.swift; sourceTree = "<group>"; };
 		E955AAE926D734E0005FE4EF /* NVActivityIndicatorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NVActivityIndicatorController.xib; sourceTree = "<group>"; };
+		E955AAED26D87833005FE4EF /* VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VM.swift; sourceTree = "<group>"; };
+		E955AAEF26D8784E005FE4EF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E95A98E2265749C100E37691 /* TiltedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltedLayout.swift; sourceTree = "<group>"; };
 		E95A98E42657514500E37691 /* CusLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusLayoutAttributes.swift; sourceTree = "<group>"; };
 		E95A98E626575DD900E37691 /* LayoutTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTransform.swift; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				E955AAEC26D877B8005FE4EF /* MainSample */,
 				E955AAE726D734C8005FE4EF /* NVActivityIndicator */,
 				E955AAE226CF9759005FE4EF /* PromiseKitSample */,
 				E9CC074826C645C200FB9CCC /* DeviceKitSample */,
@@ -348,8 +353,6 @@
 				75FB6FD3255FFF20008002DF /* BaseUI */,
 				75427B3525382C5D0025EBD4 /* AppDelegate.swift */,
 				75427B3725382C5D0025EBD4 /* SceneDelegate.swift */,
-				75FB6FC9255FFACA008002DF /* ViewController.swift */,
-				75FB6FCA255FFACA008002DF /* ViewController.xib */,
 				75427B3B25382C5D0025EBD4 /* Main.storyboard */,
 				75427B3E25382C630025EBD4 /* Assets.xcassets */,
 				75427B4025382C630025EBD4 /* LaunchScreen.storyboard */,
@@ -431,6 +434,17 @@
 				E955AAE926D734E0005FE4EF /* NVActivityIndicatorController.xib */,
 			);
 			path = NVActivityIndicator;
+			sourceTree = "<group>";
+		};
+		E955AAEC26D877B8005FE4EF /* MainSample */ = {
+			isa = PBXGroup;
+			children = (
+				75FB6FC9255FFACA008002DF /* ViewController.swift */,
+				75FB6FCA255FFACA008002DF /* ViewController.xib */,
+				E955AAED26D87833005FE4EF /* VM.swift */,
+				E955AAEF26D8784E005FE4EF /* Model.swift */,
+			);
+			path = MainSample;
 			sourceTree = "<group>";
 		};
 		E9C97249264E204100E0373A /* PanModalSample */ = {
@@ -714,8 +728,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E955AAF026D8784E005FE4EF /* Model.swift in Sources */,
 				2885E91F25CE840E004DCCC0 /* CollectionViewController.swift in Sources */,
 				75FB6FD8255FFF56008002DF /* BaseView.swift in Sources */,
+				E955AAEE26D87833005FE4EF /* VM.swift in Sources */,
 				E905D167265F308600D3E98D /* TransformSampleController.swift in Sources */,
 				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,

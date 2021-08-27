@@ -52,6 +52,12 @@ class ViewController: UIViewController {
         self.dataSource.append(DSData(title: "PromiseKitSample", detail: "PromiseKit", dsid: 6))
         self.dataSource.append(DSData(title: "NVActivityIndicator", detail: "NVActivityIndicator", dsid: 7))
         self.title = "DaoSample iOS 11+"
+        
+        let daorx =  DaoRx()
+        daorx.subscribeObservable()
+        daorx.singleSubscribe()
+        daorx.completableSubscribe()
+        daorx.maybeSubscribe()
     }
     /*
     // MARK: - Navigation
@@ -62,7 +68,8 @@ class ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
