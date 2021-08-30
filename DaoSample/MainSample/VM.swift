@@ -26,6 +26,7 @@ class VM {
 
 class DaoRx {
     // Observable<Any>: 可监听序列   可产生事件
+    // Observer 观察者
     // subscribe 将事件分类
     // Disposables 回收者
     let disposeBag: DisposeBag = DisposeBag()
@@ -38,22 +39,34 @@ class DaoRx {
         observable.onCompleted()
         return Disposables.create()
     }
-    
-    func subscribeObservable() {
-        _ = numObservable.subscribe { num in
-            //onNext 事件
+    let numObserver :AnyObserver<Int> = AnyObserver { event in
+        switch event {
+        case .next(let num):
             print(num)
-        } onError: { err in
-            //onError 事件
-            
-        } onCompleted: {
-            //onCompleted 事件
+        case .completed:
             print("完成")
-        } onDisposed: {
-            //onDisposed 事件
-            print("回收")
-        }.disposed(by: disposeBag)
-
+        case .error(let err):
+            print(err)
+        }
+    }
+    func subscribeObservable(hasObserver: Bool) {
+        if hasObserver {
+            _ = numObservable.subscribe(numObserver).disposed(by: disposeBag)
+        }else{
+            _ = numObservable.subscribe { num in
+                //onNext 事件
+                print(num)
+            } onError: { err in
+                //onError 事件
+                
+            } onCompleted: {
+                //onCompleted 事件
+                print("完成")
+            } onDisposed: {
+                //onDisposed 事件
+                print("回收")
+            }.disposed(by: disposeBag)
+        }
     }
     
     // Single 序列 只产生一个元素或一个错误

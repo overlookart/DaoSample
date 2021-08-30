@@ -53,8 +53,8 @@ class ViewController: UIViewController {
         self.dataSource.append(DSData(title: "NVActivityIndicator", detail: "NVActivityIndicator", dsid: 7))
         self.title = "DaoSample iOS 11+"
         
-        let daorx =  DaoRx()
-        daorx.subscribeObservable()
+        let daorx = DaoRx()
+        daorx.subscribeObservable(hasObserver: true)
         daorx.singleSubscribe()
         daorx.completableSubscribe()
         daorx.maybeSubscribe()
