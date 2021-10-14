@@ -50,7 +50,7 @@ target 'DaoSample' do
   # 指南
   pod 'Instructions'
   # 照片选择
-  pod 'ImagePicker'
+  #pod 'ImagePicker'
   #pod 'YPImagePicker'
   # 隐私权限
   pod 'SPPermissions'
