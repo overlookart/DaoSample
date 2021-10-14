@@ -38,7 +38,7 @@ target 'DaoSample' do
   # 指示器
   pod "NVActivityIndicatorView"
   #
-  pod 'SwiftMessages'
+  pod 'SwiftMessages', '9.0.5'
   #
   pod 'SwiftEntryKit'
   # 侧滑菜单
