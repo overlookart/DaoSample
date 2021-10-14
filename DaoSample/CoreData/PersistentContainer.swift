@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-//一个将Core Data堆栈封装在您的应用程序中的容器。
+//一个将Core Data堆栈封装在您的应用程序中的容器。 数据库
 /**
  NSPersistentContainer通过处理托管对象模型（NSManagedObjectModel），
  持久性存储协调器（NSPersistentStoreCoordinator）
@@ -25,9 +25,18 @@ class PersistentContainer: NSPersistentContainer {
         super.init(name: name, managedObjectModel: model)
     }
     
+    /// 创建一个空的实体模型对象
+    /// - Parameter objectType: 实体类型
+    /// - Returns: 实体模型对象
+    func createEntityObject(objectType: NSManagedObject.Type) -> NSManagedObject {
+        let entityName = "\(objectType)"
+        let entity = NSEntityDescription.insertNewObject(forEntityName: entityName, into: viewContext)
+        return entity
+    }
+    
     
     /// 储存数据
-    /// - Parameter backgroundContext: <#backgroundContext description#>
+    /// - Parameter backgroundContext: 负责应用和数据库之间的交互
     func saveContext(backgroundContext: NSManagedObjectContext? = nil) {
         let context = backgroundContext ?? viewContext
         guard context.hasChanges else { return }

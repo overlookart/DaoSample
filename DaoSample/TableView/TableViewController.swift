@@ -87,7 +87,7 @@ class TableViewController: UITableViewController {
     
     @objc func addAction() {
         self.tableView.setEditing(false, animated: true)
-        let alert = UIAlertController(title: "添加一种生物泛型", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "添加一组", message: nil, preferredStyle: .alert)
         alert.addAction(title: "确定", style: .default, isEnabled: true) { (action) in
             if let tf = alert.textFields, tf.count > 0 ,let ff = tf.first, let text = ff.text {
                 self.addBiologyLevel(levelName: text)
@@ -164,8 +164,7 @@ extension TableViewController {
         let view = tableView.dequeueReusableHeaderFooterView(withClass: THeaderView.self)
         view.addAction = {
             let addName = self.dataSource[section].name ?? ""
-            
-            let alert = UIAlertController(title: "添加一种\(addName)类", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "在\(addName)添加一项", message: nil, preferredStyle: .alert)
             alert.addAction(title: "确定", style: .default, isEnabled: true) { (action) in
                 if let tf = alert.textFields, tf.count > 0 ,let ff = tf.first, let text = ff.text, !text.isEmpty {
                     self.addBiologyClass(className: text, index: section)

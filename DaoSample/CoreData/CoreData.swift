@@ -18,9 +18,9 @@ class CoreData {
         return instance
     }
     
-    //Core Data 持久容器
+    //Core Data 持久容器 数据库
     lazy var persistentContainer: PersistentContainer = {
-        //初始化 数据模型的文件名
+        //初始化 数据库的文件名
        let container = PersistentContainer(name: "BiologyModel")
         //加载所有持久性存储。
         container.loadPersistentStores { (description, error) in
@@ -35,17 +35,6 @@ class CoreData {
         }
         return container
     }()
-    
-    
-    
-    /// 插入一条数据
-    /// - Parameter objectType: 数据类
-    /// - Returns: 数据库的数据模型
-    private func insertObject(objectType: NSManagedObject.Type) -> NSManagedObject  {
-        let entityName = "\(objectType)"
-        let entity = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.persistentContainer.viewContext)
-        return entity
-    }
     
     /// 查询 core data 数据
     /// - Parameter entityName: 查询参数
@@ -84,7 +73,7 @@ extension CoreData {
     /// - Parameter name: 名称
     /// - Returns: 数据模型
     func addBiologyLevel(name: String) -> BiologyLevel {
-        let biologyLevel = self.insertObject(objectType: BiologyLevel.self) as! BiologyLevel
+        let biologyLevel = self.persistentContainer.createEntityObject(objectType: BiologyLevel.self) as! BiologyLevel
         biologyLevel.name = name
         self.save()
         return biologyLevel
