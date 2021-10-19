@@ -8,6 +8,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import SideMenu
 class VM {
     //可监听序列
     let data = Observable.just([Model(title: "SearchController", detail: "搜索控制器", dsid: 0),
@@ -19,8 +20,20 @@ class VM {
                                 Model(title: "PromiseKitSample", detail: "PromiseKit", dsid: 6),
                                 Model(title: "NVActivityIndicator", detail: "NVActivityIndicator", dsid: 7)])
     
+    /// 绑定数据源
+    /// - Parameters:
+    ///   - view: tableView
+    ///   - disposeBag: 回收器
     func bindDataSource(view: UITableView, disposeBag: DisposeBag) {
+        data.bind(to: view.rx.items){(tableView, indexPath, model) in
+            let cell = tableView.dequeueReusableCell(withClass: UITableViewCell.self)
+            cell.textLabel?.text = model.title
+            cell.detailTextLabel?.text = model.detail
+            return cell
+        }.disposed(by: disposeBag)
         
+        
+
     }
 }
 

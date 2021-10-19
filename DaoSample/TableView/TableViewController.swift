@@ -77,11 +77,7 @@ class TableViewController: UITableViewController {
     }
     
     func requestData() {
-         let r = CoreData.share.findBiologyLevels()
-         for b in r {
-            print(b.name)
-            print(b.levels)
-        }
+        let r = CoreData.share.findBiologyLevels()
         self.dataSource = r
     }
     

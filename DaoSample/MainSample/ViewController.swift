@@ -6,24 +6,12 @@
 //
 
 import UIKit
-
-class DSData {
-    var title: String
-    var detail: String
-    var dsid: Int
-    
-    init(title: String, detail: String, dsid: Int) {
-        self.title = title
-        self.detail = detail
-        self.dsid = dsid
-    }
-}
+import RxSwift
 
 class ViewController: UIViewController {
     @IBOutlet var mainTableView: UITableView!
-    
-    var dataSource: [DSData] = []
-    
+    let disposeBag = DisposeBag()
+    let vm = VM()
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 //        self.setNavigationBarPrefersLargeTitles(Enable: true)
@@ -43,16 +31,32 @@ class ViewController: UIViewController {
         self.navigationController?.setNavigationBar(PrefersLargeTitlesEnable: true)
         self.setNavigationBarLargeTitleDisplay(Mode: .automatic)
         self.navigationController?.setNavigationBar(BackgroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-        self.dataSource.append(DSData(title: "SearchController", detail: "搜索控制器", dsid: 0))
-        self.dataSource.append(DSData(title: "CollectionController", detail: "网格控制器", dsid: 1))
-        self.dataSource.append(DSData(title: "PanModalSample", detail: "PanModal库", dsid: 2))
-        self.dataSource.append(DSData(title: "XCGLoggerSample", detail: "XCGLogger库", dsid: 3))
-        self.dataSource.append(DSData(title: "TransformSample", detail: "Transform", dsid: 4))
-        self.dataSource.append(DSData(title: "DeviceKitSample", detail: "DeviceKit", dsid: 5))
-        self.dataSource.append(DSData(title: "PromiseKitSample", detail: "PromiseKit", dsid: 6))
-        self.dataSource.append(DSData(title: "NVActivityIndicator", detail: "NVActivityIndicator", dsid: 7))
         self.title = "DaoSample iOS 11+"
         
+        
+        //注册无nib的单元格
+        self.mainTableView.register(cellWithClass: UITableViewCell.self)
+        //绑定数据源
+        vm.bindDataSource(view: self.mainTableView, disposeBag: disposeBag)
+        self.mainTableView.rx.modelSelected(Model.self).subscribe(onNext: {model in
+            if model.dsid == 0 {
+                self.navigationController?.pushViewController(TableViewController())
+            }else if model.dsid == 1 {
+                self.navigationController?.pushViewController(CollectionViewController(nibName: "CollectionViewController", bundle: Bundle.main))
+            }else if model.dsid == 2 {
+                self.presentPanModal(PanModalController())
+            }else if model.dsid == 3 {
+                self.navigationController?.pushViewController(XCGLoggerController())
+            }else if model.dsid == 4 {
+                self.navigationController?.pushViewController(TransformSampleController())
+            }else if model.dsid == 5 {
+                self.navigationController?.pushViewController(DeviceKitSampleController())
+            }else if model.dsid == 6 {
+                self.navigationController?.pushViewController(PromiseKitSampleController())
+            }else if model.dsid == 7 {
+                self.navigationController?.pushViewController(NVActivityIndicatorController())
+            }
+        }).disposed(by: disposeBag)
         let daorx = DaoRx()
         daorx.subscribeObservable(hasObserver: true)
         daorx.singleSubscribe()
@@ -72,36 +76,6 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataSource.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-        cell.textLabel?.text = dataSource[indexPath.row].title
-        cell.detailTextLabel?.text = dataSource[indexPath.row].detail
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if dataSource[indexPath.row].dsid == 0 {
-            self.navigationController?.pushViewController(TableViewController())
-        }else if dataSource[indexPath.row].dsid == 1{
-            self.navigationController?.pushViewController(CollectionViewController(nibName: "CollectionViewController", bundle: Bundle.main))
-        }else if dataSource[indexPath.row].dsid == 2 {
-            presentPanModal(PanModalController())
-        }else if dataSource[indexPath.row].dsid == 3 {
-            self.navigationController?.pushViewController(XCGLoggerController())
-        }else if dataSource[indexPath.row].dsid == 4 {
-            self.navigationController?.pushViewController(TransformSampleController())
-        }else if dataSource[indexPath.row].dsid == 5 {
-            self.navigationController?.pushViewController(DeviceKitSampleController())
-        }else if dataSource[indexPath.row].dsid == 6 {
-            self.navigationController?.pushViewController(PromiseKitSampleController())
-        }else if dataSource[indexPath.row].dsid == 7 {
-            self.navigationController?.pushViewController(NVActivityIndicatorController())
-        }
-    }
+extension ViewController{
+   
 }

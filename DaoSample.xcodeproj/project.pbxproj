@@ -55,6 +55,10 @@
 		E905D168265F308600D3E98D /* TransformSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E905D166265F308600D3E98D /* TransformSampleController.xib */; };
 		E905D16B26609CCB00D3E98D /* Transform3DController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905D16926609CCB00D3E98D /* Transform3DController.swift */; };
 		E905D16C26609CCB00D3E98D /* Transform3DController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E905D16A26609CCB00D3E98D /* Transform3DController.xib */; };
+		E918B51E271EAC6300B72381 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E918B51C271EAC6300B72381 /* DefaultTableViewCell.swift */; };
+		E918B51F271EAC6300B72381 /* DefaultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E918B51D271EAC6300B72381 /* DefaultTableViewCell.xib */; };
+		E918B521271EACCD00B72381 /* TableFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E918B520271EACCD00B72381 /* TableFeature.swift */; };
+		E918B523271EAD7000B72381 /* TableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E918B522271EAD7000B72381 /* TableVM.swift */; };
 		E955AAE526CF9785005FE4EF /* PromiseKitSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955AAE326CF9785005FE4EF /* PromiseKitSampleController.swift */; };
 		E955AAE626CF9785005FE4EF /* PromiseKitSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E955AAE426CF9785005FE4EF /* PromiseKitSampleController.xib */; };
 		E955AAEA26D734E0005FE4EF /* NVActivityIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955AAE826D734E0005FE4EF /* NVActivityIndicatorController.swift */; };
@@ -150,6 +154,10 @@
 		E905D166265F308600D3E98D /* TransformSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformSampleController.xib; sourceTree = "<group>"; };
 		E905D16926609CCB00D3E98D /* Transform3DController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform3DController.swift; sourceTree = "<group>"; };
 		E905D16A26609CCB00D3E98D /* Transform3DController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Transform3DController.xib; sourceTree = "<group>"; };
+		E918B51C271EAC6300B72381 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		E918B51D271EAC6300B72381 /* DefaultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultTableViewCell.xib; sourceTree = "<group>"; };
+		E918B520271EACCD00B72381 /* TableFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFeature.swift; sourceTree = "<group>"; };
+		E918B522271EAD7000B72381 /* TableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVM.swift; sourceTree = "<group>"; };
 		E92E8AB6667168178762F75A /* Pods-DaoSample-DaoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample-DaoSampleUITests/Pods-DaoSample-DaoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E955AAE326CF9785005FE4EF /* PromiseKitSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitSampleController.swift; sourceTree = "<group>"; };
 		E955AAE426CF9785005FE4EF /* PromiseKitSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromiseKitSampleController.xib; sourceTree = "<group>"; };
@@ -269,11 +277,13 @@
 		28B8DAFA25CCCB7A0085A4A4 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				E918B51B271E9ED700B72381 /* Model */,
 				28B8DAFB25CCCC480085A4A4 /* View */,
 				28B8DA5425C8E37E0085A4A4 /* ResultsTableController.swift */,
 				28B8DA5525C8E37E0085A4A4 /* ResultsTableController.xib */,
 				28B6044525B57216009653AF /* TableViewController.swift */,
 				28B6044625B57216009653AF /* TableViewController.xib */,
+				E918B522271EAD7000B72381 /* TableVM.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -282,6 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				2885E90825CCD41B004DCCC0 /* THeaderView.swift */,
+				E918B51C271EAC6300B72381 /* DefaultTableViewCell.swift */,
+				E918B51D271EAC6300B72381 /* DefaultTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -416,6 +428,14 @@
 				E905D16A26609CCB00D3E98D /* Transform3DController.xib */,
 			);
 			path = TransformSample;
+			sourceTree = "<group>";
+		};
+		E918B51B271E9ED700B72381 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E918B520271EACCD00B72381 /* TableFeature.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E955AAE226CF9759005FE4EF /* PromiseKitSample */ = {
@@ -587,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75427B4225382C630025EBD4 /* LaunchScreen.storyboard in Resources */,
+				E918B51F271EAC6300B72381 /* DefaultTableViewCell.xib in Resources */,
 				E905D16C26609CCB00D3E98D /* Transform3DController.xib in Resources */,
 				E955AAE626CF9785005FE4EF /* PromiseKitSampleController.xib in Resources */,
 				E955AAEB26D734E0005FE4EF /* NVActivityIndicatorController.xib in Resources */,
@@ -731,6 +752,8 @@
 				E955AAF026D8784E005FE4EF /* Model.swift in Sources */,
 				2885E91F25CE840E004DCCC0 /* CollectionViewController.swift in Sources */,
 				75FB6FD8255FFF56008002DF /* BaseView.swift in Sources */,
+				E918B523271EAD7000B72381 /* TableVM.swift in Sources */,
+				E918B521271EACCD00B72381 /* TableFeature.swift in Sources */,
 				E955AAEE26D87833005FE4EF /* VM.swift in Sources */,
 				E905D167265F308600D3E98D /* TransformSampleController.swift in Sources */,
 				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
@@ -769,6 +792,7 @@
 				E9C9725426534D5B00E0373A /* XCGLoggerController.swift in Sources */,
 				28B8DA5625C8E37E0085A4A4 /* ResultsTableController.swift in Sources */,
 				75F3AD472568BDCD0000BDBE /* UITextField_Extension.swift in Sources */,
+				E918B51E271EAC6300B72381 /* DefaultTableViewCell.swift in Sources */,
 				E95A98E52657514500E37691 /* CusLayoutAttributes.swift in Sources */,
 				75FB6FF725601953008002DF /* UIApplication_Extension.swift in Sources */,
 				2885E90925CCD41B004DCCC0 /* THeaderView.swift in Sources */,
