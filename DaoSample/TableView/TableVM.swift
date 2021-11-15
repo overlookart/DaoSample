@@ -7,13 +7,14 @@
 import RxSwift
 import RxCocoa
 import Foundation
+import UIKit
 struct TableVM {
     let data = Observable.just([TableFeature(name: "分割线", id: 0),
                                 TableFeature(name: "单选", id: 1)])
     func bindDataSource(view: UITableView, disposeBag: DisposeBag) {
         data.bind(to: view.rx.items){(tableView, indexPath, model) in
             let cell = tableView.dequeueReusableCell(withClass: UITableViewCell.self)
-            
+            cell.textLabel?.text = model.name
             return cell
         }.disposed(by: disposeBag)
     }
