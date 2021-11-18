@@ -57,6 +57,8 @@ class ViewController: UIViewController {
                 self.navigationController?.pushViewController(NVActivityIndicatorController())
             }else if model.dsid == 8 {
                 self.navigationController?.pushViewController(GCDServerController())
+            }else if model.dsid == 9 {
+                self.navigationController?.pushViewController(Transform3DController())
             }
         }).disposed(by: disposeBag)
         let daorx = DaoRx()

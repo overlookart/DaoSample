@@ -19,7 +19,8 @@ class VM {
                                 Model(title: "DeviceKitSample", detail: "DeviceKit", dsid: 5),
                                 Model(title: "PromiseKitSample", detail: "PromiseKit", dsid: 6),
                                 Model(title: "NVActivityIndicator", detail: "NVActivityIndicator", dsid: 7),
-                                Model(title: "GCDWebServer", detail: "GCDWebServer", dsid: 8)])
+                                Model(title: "GCDWebServer", detail: "GCDWebServer", dsid: 8),
+                                Model(title: "Transform3D", detail: "Transform3D", dsid: 9)])
     
     /// 绑定数据源
     /// - Parameters:
