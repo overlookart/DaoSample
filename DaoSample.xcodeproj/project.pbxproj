@@ -78,6 +78,7 @@
 		E9C9725526534D5B00E0373A /* XCGLoggerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9725326534D5B00E0373A /* XCGLoggerController.xib */; };
 		E9CC074B26C645EA00FB9CCC /* DeviceKitSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC074926C645EA00FB9CCC /* DeviceKitSampleController.swift */; };
 		E9CC074C26C645EA00FB9CCC /* DeviceKitSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CC074A26C645EA00FB9CCC /* DeviceKitSampleController.xib */; };
+		E9E1A7BE27F82DAA00B6C566 /* BaseDataVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E1A7BD27F82DAA00B6C566 /* BaseDataVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		E9C9725326534D5B00E0373A /* XCGLoggerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XCGLoggerController.xib; sourceTree = "<group>"; };
 		E9CC074926C645EA00FB9CCC /* DeviceKitSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceKitSampleController.swift; sourceTree = "<group>"; };
 		E9CC074A26C645EA00FB9CCC /* DeviceKitSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceKitSampleController.xib; sourceTree = "<group>"; };
+		E9E1A7BD27F82DAA00B6C566 /* BaseDataVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataVM.swift; sourceTree = "<group>"; };
 		F0BE6A84349F1F956C39637F /* Pods-DaoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -368,6 +370,7 @@
 				286795BD257299BD00A419D2 /* Browser */,
 				75FB6FDC256000CD008002DF /* Extension */,
 				75FB6FD3255FFF20008002DF /* BaseUI */,
+				E9E1A7BC27F8215400B6C566 /* BaseModel */,
 				75427B3525382C5D0025EBD4 /* AppDelegate.swift */,
 				75427B3725382C5D0025EBD4 /* SceneDelegate.swift */,
 				75427B3B25382C5D0025EBD4 /* Main.storyboard */,
@@ -506,6 +509,14 @@
 				E9CC074A26C645EA00FB9CCC /* DeviceKitSampleController.xib */,
 			);
 			path = DeviceKitSample;
+			sourceTree = "<group>";
+		};
+		E9E1A7BC27F8215400B6C566 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9E1A7BD27F82DAA00B6C566 /* BaseDataVM.swift */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -771,6 +782,7 @@
 				E918B521271EACCD00B72381 /* TableFeature.swift in Sources */,
 				E955AAEE26D87833005FE4EF /* VM.swift in Sources */,
 				E905D167265F308600D3E98D /* TransformSampleController.swift in Sources */,
+				E9E1A7BE27F82DAA00B6C566 /* BaseDataVM.swift in Sources */,
 				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
 				E905DF342738F52A00A5CF38 /* GCDServerController.swift in Sources */,

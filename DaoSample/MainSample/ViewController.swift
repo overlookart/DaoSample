@@ -8,6 +8,10 @@
 import UIKit
 import RxSwift
 
+#if canImport(Pastel)
+import Pastel
+#endif
+
 class ViewController: UIViewController {
     @IBOutlet var mainTableView: UITableView!
     let disposeBag = DisposeBag()
@@ -36,6 +40,41 @@ class ViewController: UIViewController {
         
         //注册无nib的单元格
         self.mainTableView.register(cellWithClass: UITableViewCell.self)
+        
+        ///根据引用的模块配置数据
+        self.vm.addModel(Model(title: "SearchController", detail: "搜索控制器", dsid: 0))
+        self.vm.addModel(Model(title: "CollectionController", detail: "网格控制器", dsid: 1))
+        
+        #if canImport(PanModal)
+        self.vm.addModel(Model(title: "PanModalSample", detail: "PanModal库", dsid: 2))
+        #endif
+        
+        #if canImport(XCGLogger)
+        self.vm.addModel(Model(title: "XCGLoggerSample", detail: "XCGLogger库", dsid: 3))
+        #endif
+        
+        self.vm.addModel(Model(title: "TransformSample", detail: "Transform", dsid: 4))
+        
+        #if canImport(DeviceKit)
+        self.vm.addModel(Model(title: "DeviceKitSample", detail: "DeviceKit", dsid: 5))
+        #endif
+        
+        #if canImport(PromiseKit)
+        self.vm.addModel(Model(title: "PromiseKitSample", detail: "PromiseKit", dsid: 6))
+        #endif
+        
+        #if canImport(NVActivityIndicatorView)
+        self.vm.addModel(Model(title: "NVActivityIndicator", detail: "NVActivityIndicator", dsid: 7))
+        #endif
+        
+        #if canImport(GCDWebServer)
+        self.vm.addModel(Model(title: "GCDWebServer", detail: "GCDWebServer", dsid: 8))
+        #endif
+        
+        self.vm.addModel(Model(title: "Transform3D", detail: "Transform3D", dsid: 9))
+                          
+        
+        
         //绑定数据源
         vm.bindDataSource(view: self.mainTableView, disposeBag: disposeBag)
         self.mainTableView.rx.modelSelected(Model.self).subscribe(onNext: {model in

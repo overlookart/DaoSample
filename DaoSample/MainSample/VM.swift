@@ -9,18 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 import SideMenu
-class VM {
-    //可监听序列
-    let data = Observable.just([Model(title: "SearchController", detail: "搜索控制器", dsid: 0),
-                                Model(title: "CollectionController", detail: "网格控制器", dsid: 1),
-                                Model(title: "PanModalSample", detail: "PanModal库", dsid: 2),
-                                Model(title: "XCGLoggerSample", detail: "XCGLogger库", dsid: 3),
-                                Model(title: "TransformSample", detail: "Transform", dsid: 4),
-                                Model(title: "DeviceKitSample", detail: "DeviceKit", dsid: 5),
-                                Model(title: "PromiseKitSample", detail: "PromiseKit", dsid: 6),
-                                Model(title: "NVActivityIndicator", detail: "NVActivityIndicator", dsid: 7),
-                                Model(title: "GCDWebServer", detail: "GCDWebServer", dsid: 8),
-                                Model(title: "Transform3D", detail: "Transform3D", dsid: 9)])
+class VM: BaseDataVM<Model> {
     
     /// 绑定数据源
     /// - Parameters:
@@ -33,10 +22,13 @@ class VM {
             cell.detailTextLabel?.text = model.detail
             return cell
         }.disposed(by: disposeBag)
-        
-        
-
     }
+    
+    override func addModel(_ model: Model) {
+        datasource.append(model)
+        data.accept(datasource)
+    }
+    
 }
 
 class DaoRx {

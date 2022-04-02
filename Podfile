@@ -67,8 +67,9 @@ target 'DaoSample' do
   #
   pod 'SwiftProtobuf'
   # HUD
-  pod 'PKHUD'
-  pod 'JGProgressHUD'
+  #pod 'PKHUD'
+  #pod 'JGProgressHUD'
+  pod 'SVProgressHUD'
   #
   pod 'Then'
   #
@@ -83,6 +84,8 @@ target 'DaoSample' do
   pod 'EasyTipView'
   # 属性字符串
   pod 'SwiftRichString'
+  # 渐变色的动画View
+  pod 'Pastel'
 target 'DaoSampleTests' do
     inherit! :search_paths
     # Pods for testing
