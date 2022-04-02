@@ -79,6 +79,8 @@
 		E9CC074B26C645EA00FB9CCC /* DeviceKitSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC074926C645EA00FB9CCC /* DeviceKitSampleController.swift */; };
 		E9CC074C26C645EA00FB9CCC /* DeviceKitSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CC074A26C645EA00FB9CCC /* DeviceKitSampleController.xib */; };
 		E9E1A7BE27F82DAA00B6C566 /* BaseDataVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E1A7BD27F82DAA00B6C566 /* BaseDataVM.swift */; };
+		E9E1A7C227F833E800B6C566 /* PastelSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E1A7C027F833E800B6C566 /* PastelSampleController.swift */; };
+		E9E1A7C327F833E800B6C566 /* PastelSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E1A7C127F833E800B6C566 /* PastelSampleController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,8 @@
 		E9CC074926C645EA00FB9CCC /* DeviceKitSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceKitSampleController.swift; sourceTree = "<group>"; };
 		E9CC074A26C645EA00FB9CCC /* DeviceKitSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceKitSampleController.xib; sourceTree = "<group>"; };
 		E9E1A7BD27F82DAA00B6C566 /* BaseDataVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataVM.swift; sourceTree = "<group>"; };
+		E9E1A7C027F833E800B6C566 /* PastelSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelSampleController.swift; sourceTree = "<group>"; };
+		E9E1A7C127F833E800B6C566 /* PastelSampleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastelSampleController.xib; sourceTree = "<group>"; };
 		F0BE6A84349F1F956C39637F /* Pods-DaoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaoSample.debug.xcconfig"; path = "Target Support Files/Pods-DaoSample/Pods-DaoSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -355,6 +359,7 @@
 		75427B3425382C5D0025EBD4 /* DaoSample */ = {
 			isa = PBXGroup;
 			children = (
+				E9E1A7BF27F833BB00B6C566 /* PastelSample */,
 				E905DF312738F4D800A5CF38 /* GCDWebServer */,
 				E955AAEC26D877B8005FE4EF /* MainSample */,
 				E955AAE726D734C8005FE4EF /* NVActivityIndicator */,
@@ -519,6 +524,15 @@
 			path = BaseModel;
 			sourceTree = "<group>";
 		};
+		E9E1A7BF27F833BB00B6C566 /* PastelSample */ = {
+			isa = PBXGroup;
+			children = (
+				E9E1A7C027F833E800B6C566 /* PastelSampleController.swift */,
+				E9E1A7C127F833E800B6C566 /* PastelSampleController.xib */,
+			);
+			path = PastelSample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -635,6 +649,7 @@
 				E918B51F271EAC6300B72381 /* DefaultTableViewCell.xib in Resources */,
 				E905D16C26609CCB00D3E98D /* Transform3DController.xib in Resources */,
 				E955AAE626CF9785005FE4EF /* PromiseKitSampleController.xib in Resources */,
+				E9E1A7C327F833E800B6C566 /* PastelSampleController.xib in Resources */,
 				E955AAEB26D734E0005FE4EF /* NVActivityIndicatorController.xib in Resources */,
 				E9C9724D264E208300E0373A /* PanModalController.xib in Resources */,
 				75427B3F25382C630025EBD4 /* Assets.xcassets in Resources */,
@@ -783,6 +798,7 @@
 				E955AAEE26D87833005FE4EF /* VM.swift in Sources */,
 				E905D167265F308600D3E98D /* TransformSampleController.swift in Sources */,
 				E9E1A7BE27F82DAA00B6C566 /* BaseDataVM.swift in Sources */,
+				E9E1A7C227F833E800B6C566 /* PastelSampleController.swift in Sources */,
 				2885E92725CED7FA004DCCC0 /* CollectionViewCell.swift in Sources */,
 				75FB6FCB255FFACA008002DF /* ViewController.swift in Sources */,
 				E905DF342738F52A00A5CF38 /* GCDServerController.swift in Sources */,

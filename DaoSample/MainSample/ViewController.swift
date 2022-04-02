@@ -73,7 +73,9 @@ class ViewController: UIViewController {
         
         self.vm.addModel(Model(title: "Transform3D", detail: "Transform3D", dsid: 9))
                           
-        
+        #if canImport(Pastel)
+        self.vm.addModel(Model(title: "Pastel", detail: "颜色渐变动画视图", dsid: 10))
+        #endif
         
         //绑定数据源
         vm.bindDataSource(view: self.mainTableView, disposeBag: disposeBag)
@@ -98,6 +100,8 @@ class ViewController: UIViewController {
                 self.navigationController?.pushViewController(GCDServerController())
             }else if model.dsid == 9 {
                 self.navigationController?.pushViewController(Transform3DController())
+            }else if model.dsid == 10 {
+                self.navigationController?.pushViewController(PastelSampleController())
             }
         }).disposed(by: disposeBag)
         let daorx = DaoRx()
