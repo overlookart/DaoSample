@@ -45,3 +45,14 @@ extension UIView {
         }
     }
 }
+
+//MARK: - Transform
+
+extension UIView {
+    
+    /// 等比缩放
+    /// - Parameter scale: 缩放因子
+    func applyScale(_ scale: CGFloat){
+        layer.transform = CATransform3DScale(.identity, scale, scale, 1.0)
+    }
+}
